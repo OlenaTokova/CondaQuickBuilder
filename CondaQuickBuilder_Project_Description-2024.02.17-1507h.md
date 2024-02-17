@@ -72,6 +72,8 @@
     
     This project was chosen because it is sufficiently detailed to require some requirement from the original vision, through implementation and delivery in a team context.  
 
+### Product Purpose: Create End-to-end Automated Software Tool to generate Python script that builds a new conda environment from a project repository package.
+
 ### Learning Goals and Deliverables: 
 
     TODO: distinquish between skills and knowledge deliverables and software deliverable(s)
@@ -116,7 +118,8 @@
 
 
 ## Product Define Phase
-	## Product Name: CondaQuickBuilder
+
+### Product Name: CondaQuickBuilder
 	
 	## Product Description: CondaQuickBuilder is an automated tool designed to accelerate the setup of new projects by building a new Conda environment from an existing project repository package.  The goal is to reduce the time and manual effort required to manually set up project environments, thus increasing productivity and efficiency for developers.  
     The tool output will be a Python script for user to generate the conda environment.  
@@ -138,7 +141,10 @@
 	# CondaEnvAutomator
 	
 	Original name was Automated [conda] Project Environment Builder.  
-	It was changed to CondaQuickBuilder.
+	It was changed to CondaQuickBuilder.  
+    
+#### Check for uniqueness of the name CondaQuickBuilder
+    On 2024.02.17, we verified using a Google search specifically for Github.com repositories that the name "CondaQuickBuilder" is not being used on github.com. 
 
 ### Define Main Features:
 
@@ -241,7 +247,7 @@
 	Scan for Python dependencies.
 	
 
-### Define Project IMPLEMENTATION PLAN (Project Management) 
+## Define Project IMPLEMENTATION PLAN (Project Management) 
 
     This section defines the sequence of steps to implement Product BASED ON PRODUCT REQUIREMENT DEFINITIONS earlier.
 
@@ -268,9 +274,7 @@
 	# Documentation: Provide comprehensive documentation, including usage instructions and explanations of each module.
 
 
-### Project Purpose: Create End-to-end Automated Tool to generate Python script that builds a new conda environment from a project repository package.
-
-#### Setup Project Development Tools
+#### Tasks to Setup Project Development Tools
     1) Open VSCode
     
 	2) Create New Workspace with the Name for New Project
@@ -279,40 +283,67 @@
 
 
 
-####### Design Phase
+## Design Phase
 
-######## High-Level Design 
+### High-Level Design Phase
     High-level description of the workflow - What? how to download the best tool for your project, does not describe the exact code (except business reqs - must have env). 
 
-######### Detailed Design: exactly how to use the environment, or the code: step by step, algorithm, pseudocode. 
+### Detailed Design Phase - Workflow
 
-########## PRODUCT Workflow - Define Detailed Steps: 
+Describe exactly how to use the environment, or the code: step by step, algorithm, pseudocode. 
 
-    2) Search for pre-existing packages that fit the bill
+##### PRODUCT Workflow - Define Detailed Steps: 
+
+    1) Create Title "CondaQuickBuilder" 
+    2a) Create preliminary description of requirements
+    2b) Search for pre-existing packages that fit the bill
          Don't reinvent the wheel - find something already available that meets the requirements
-    3) Select existing that meets the initial requirements
-    4) Download the best fitting package
 
-    4b) user-specifies project folder name - function: get_new_project_name()
-    5) unzip the best fitting package into new project folder [with a user-specified name]
+        We found a package that comes close, but it is for large-scale for Big Data for bioinformatics pipelines.
+
+        ```conda-env-builder```
+        Build and maintain multiple custom conda environments all in once place.
+        https://github.com/conda-incubator/conda-env-builder/tree/main
+
+    3) Select existing that meets the initial requirements
+    4) Download "The One" best fitting package
+    -----------------------------------------------------
+
+    4b) user-specifies project folder name - 
+            function: get_new_project_name()
+
+    5) unzip the selected package into new project folder [with a user-specified name]
             function: unzip_starter_project_repo()
-    6) scan the project folder to find the (unique) set of required Python package dependencies
+
+    6) scan the project folder to find the (unique) set of required Python package dependencies, and return the set.
+            
             function: scan_project_modules()
-            py_dependencies_set
-    7) scan our local pre-existing virtual environments to see which fits the dependency tree the best.
+            return_value: py_dependencies_set
+
+    7) scan our local pre-existing virtual environments to see which fits the current environments' dependency trees, and return the one(s) that match.
+
             function: scan_existing_env()
             current_env_dependencies_set
+    
     8) decide whether to use or clone a pre-existing virtual environment or create a new one?
-        Does an existing environment have required "current enough" packages to stand up the project?
+
+        Does an existing environment have required "current enough" packages to use in the project?
+    
             function: measure_env_fit() ? 
+    
     9) use "conda search" to see if each package dependency is available in conda-channel priority: 
-            search function: 1) search_conda_forge(), 2) search_anaconda(), 3) search_pip()
+            search functions: 
+                1) search_conda_forge()
+                2) search_anaconda() 
+                3) search_pip()
+
             a) conda-forge     (set of packages IN conda-forge)
             b) anaconda        (set of packages NOT IN conda-forge, but anaconda)
             c) pip             (set of packages NOT IN (conda-forge OR anaconda)
 
     10) iterate over step 9 until all (new) packages and required versions are found
             a) build list of repos (conda-forge, anaconda, CONDA-OTHER, or pip) containing required versions 
+
                 function: build_repos_lists()
 
     12) create Python functions (or separate script commands?) needed to execute the environment build steps.
