@@ -1,4 +1,7 @@
 # Docstring needed...
+
+# TODO: add try-except blocks to make all parts of the program  fault-tolerant. 
+
 import re
 import subprocess
 import requests
@@ -179,6 +182,9 @@ def search_pypi(package, package_sign, package_version):
             return str(highest_version)
     return None
 
+# TODO: split the steps in search_package into separate functions?  
+# TODO: add try-except blocks to make this fault-tolerant. 
+
 def search_package(package, package_sign, package_version, channels_list):
     """
     Search for a package in Conda Forge, Anaconda, and PIP repositories.
@@ -220,6 +226,8 @@ def search_package(package, package_sign, package_version, channels_list):
     
     print(f"Package '{package} {package_version}' not found in any channel.")
     return None
+
+# TODO: make main() into a separate function that is the main "entry point" for the program.  
 
 if __name__ == "__main__":
     # unzip and get project folder name
