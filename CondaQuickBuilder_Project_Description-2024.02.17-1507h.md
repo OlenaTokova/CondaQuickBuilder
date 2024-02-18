@@ -45,7 +45,7 @@
 	Rich Lysakowski
 	Attachments
 	Feb 8, 2024, 8:01 AM (1 day ago)
-	to Elena, Hi, me, Rocio, Monzia, nagla, Pankaj, Biraja, Cesar, Abigail, Anil, Mona, Herbert, Vincent
+	to Elena, Hi, me, Rocio, Monzia, nagla, Pankaj, Biraja, Cesar, Abigail, Anil, Mona, Herbert, Vincent.
 	
 ###################################################################################  
 
