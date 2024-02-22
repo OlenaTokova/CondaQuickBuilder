@@ -5,6 +5,7 @@
 Defines "function flow" matching the workflow defined as detailed steps.
 
 Created On: 2024.02.21 2206h
+(this markdown file replaced the YAML file with the same name.)
 
 TODO: Prompt Sequence: refine steps below to prepare them for Copilot or ChatGPT prompts.
 
