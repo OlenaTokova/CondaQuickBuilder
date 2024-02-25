@@ -1,0 +1,8 @@
+root - ERROR - Error occurred while creating conda environment: Command '['conda', 'create', '--name', 'JUNK_BOBSURUNCLE', 'python={python_version}', '--yes']' returned non-zero exit status 1.
+root - ERROR - Error occurred while searching package: Command '['conda', 'install', '--yes', '--name', 'JUNK_BOBSURUNCLE', '-c', 'conda-forge', 'contourpy==1.0.6']' returned non-zero exit status 1.
+root - ERROR - Error occurred while searching package: Command '['conda', 'install', '--yes', '--name', 'JUNK_BOBSURUNCLE', '-c', 'conda-forge', 'cycler==0.11.0']' returned non-zero exit status 1.
+root - ERROR - Error occurred while searching package: Command '['conda', 'install', '--yes', '--name', 'JUNK_BOBSURUNCLE', '-c', 'conda-forge', 'fonttools==4.38.0']' returned non-zero exit status 1.
+root - ERROR - Error occurred while searching package: Command '['conda', 'install', '--yes', '--name', 'JUNK_BOBSURUNCLE', '-c', 'conda-forge', 'kiwisolver==1.4.4']' returned non-zero exit status 1.
+root - ERROR - Error occurred while searching package: Command '['conda', 'install', '--yes', '--name', 'JUNK_BOBSURUNCLE', '-c', 'conda-forge', 'matplotlib==3.6.2']' returned non-zero exit status 1.
+root - ERROR - Error occurred while searching package: Command '['conda', 'install', '--yes', '--name', 'JUNK_BOBSURUNCLE', '-c', 'conda-forge', 'numpy==1.23.5']' returned non-zero exit status 1.
+root - ERROR - Error occurred while searching package: Command '['conda', 'install', '--yes', '--name', 'JUNK_BOBSURUNCLE', '-c', 'conda-forge', 'packaging==21.3']' returned non-zero exit status 1.
