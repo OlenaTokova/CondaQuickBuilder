@@ -15,48 +15,57 @@ TODO: Prompt Sequence: refine steps below to prepare them for Copilot or ChatGPT
 
 Below are the list of likely functions needed that are known thus far: 
 
-3) SETUP CODE INSTRUMENTATION: 
+3) TODO: SETUP CODE INSTRUMENTATION: 
     configure logging:
     start logging: 
 
-4) User enters target repo: https://github.com/streamlit/streamlit-hello/
+4) TODO: User enters target repo: https://github.com/streamlit/streamlit-hello/
 
-4a)    function: fetch_remote_repo()
+4a) TODO: function: fetch_remote_repo()
 
-4b) function: get_new_project_name()
+4b) TODO: function: get_new_project_name()
         """get name from zip file"""
         return project_name
 
-5) function: unzip_starter_project_repo()
+5) DONE: function: unzip_starter_project_repo()
 
 6) function: scan_project_modules()
     return_value: py_dependencies_set
 
-7) function: scan_existing_env()
+7) function: scan_existing_envs()
+        return:  current_env_dependencies_set
+
+        scan (ALL?) our local pre-existing virtual environments 
+
+        function: scan_existing_env()
             current_env_dependencies_set
     
 8) function: measure_env_fit() ???? 
+        take set (lists, tuple or other?) of environment packages 
+        do package "match and score" operation 
+        identify "best" fit of current environments' dependency trees,
+        return the one(s) that match.
 
 9) function: repo_search(): 
 
-  Do conditional searches for packages in the following order:
+    Do conditional searches for packages in the following order:
 
-    If all packages are found in conda-forge, use those and stop searching.
+        If all packages are found in conda-forge, use those and stop searching.
 
-      a) search_conda_forge()
-            return: conda_forge_search_results
-    
-    else if not all packages are found in conda-forge, search anaconda.
+        a) search_conda_forge()
+                return: conda_forge_search_results
+        
+        else if not all packages are found in conda-forge, search anaconda.
 
-    b) search_anaconda() 
-          return: anaconda_search_results
-    
-    else if not all packages are found in anaconda, search pypi.
-    
-    c) search_pip()
-          return: pip_search_results
+        b) search_anaconda() 
+            return: anaconda_search_results
+        
+        else if not all packages are found in anaconda, search pypi.
+        
+        c) search_pip()
+            return: pip_search_results
 
-  return conda_forge_search_results, anaconda_search_results, pip_search_results
+    return conda_forge_search_results, anaconda_search_results, pip_search_results
 
 10) function: build_repos_lists()
 

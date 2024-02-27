@@ -320,7 +320,7 @@ Describe exactly how to use the environment, or the code: step by step, algorith
             function: scan_project_modules()
             return_value: py_dependencies_set
 
-    7) scan our local pre-existing virtual environments to see which fits the current environments' dependency trees, and return the one(s) that match.
+    7) scan (ALL?) our local pre-existing virtual environments to see which fits the current environments' dependency trees, and return the one(s) that match.
 
             function: scan_existing_env()
             current_env_dependencies_set

@@ -59,9 +59,9 @@ def parse_requirements(pathtorequirements):
                     # handle packages without version specification
                     requirements.append((line, None, None))
 
-def get_envs():
+def get_all_envs_list():
     """
-    Function to retrieve a list of available conda environments.
+    Function to retrieve a list of available LOCAL conda environments.
     Returns a list of environment names.
     """
     result = subprocess.run(['conda', 'env', 'list'], stdout=subprocess.PIPE)
@@ -72,7 +72,8 @@ def get_envs():
 def get_channels():
     """
     Retrieves a list of channels from the conda configuration. 
-    Returns a list of channel names.
+    Returns a list of channel names: 
+    (e.g., ['conda-forge', 'defaults', anaconda, 'bioconda', 'pypi'])
     """
     result = subprocess.run(['conda', 'config', '--show', 'channels'], stdout=subprocess.PIPE)
     # Decode the output to a string and split into lines
@@ -89,9 +90,12 @@ def get_channels():
             channels_names.append(channel_name)
     return channels_names
 
+env = "openai"
+package = "openai"
+
 def get_package_versions(env, package):
     """
-    Retrieves the versions of a specified package in a given environment using conda.
+    Retrieves version of package specified by arg2 in LOCAL environment (arg1) using conda list.
 
     Args:
         env (str): The name of the conda environment.
@@ -99,10 +103,16 @@ def get_package_versions(env, package):
 
     Returns:
         str: A string containing the versions of the specified package in the given environment.
+        
+    Example:  the conda command (conda list -n openai openai) return package 'openai' version information from the environment 'devcore':
+    # Name                    Version                   Build  Channel
+    openai                    0.27.8                   pypi_0    pypi
     """
     result = subprocess.run(['conda', 'list', '-n', env, package], stdout=subprocess.PIPE)
     versions = result.stdout.decode('utf-8')
     return versions
+
+get_package_versions(env, package)
 
 def save_versions(package):
     """
