@@ -11,7 +11,11 @@ from packaging.version import parse, InvalidVersion
 # Get the latest version of Python
 result = requests.get("https://endoflife.date/api/python.json")
 parsed_result = result.json()
+print(f"parsed_result {parsed_result}")
+
 last_python_version =  str(parsed_result[0]["latest"])
+print(f"latest_python_version {last_python_version}")
+
 
 # Define the minimum and maximum acceptable Python versions
 MIN_PYTHON_VERSION = parse("2.0")

@@ -30,6 +30,7 @@ Below are the list of likely functions needed that are known thus far:
 5) DONE: function: unzip_starter_project_repo()
 
 6) function: scan_project_modules()
+    """Scans modules in fetched remote repo to get  names of dependent packages."""  
     return_value: py_dependencies_set
 
 7) function: scan_existing_envs()
