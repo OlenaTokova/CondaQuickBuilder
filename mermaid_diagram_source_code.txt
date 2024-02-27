@@ -1,0 +1,18 @@
+Generate diagram at: https://mermaid.live/
+
+graph TB
+    A[Start] --> B{Unzip or Clone the starter project repository}
+    B --> C{C Search for environments.yml, requirements.txt file or PyProject.toml}
+    C -->|C0 environments.yml| D[C1 Use environment.yml for the environment]
+    C -->|C2 requirements.txt| E[C3 Use requirement.txt for the environment]
+    C -->|C4 Poetry spec| F[C5 Ask user to use Poetry spec for environment]
+    D --> G[Parse the requirements file]
+    E --> G1[No Python constraint; use latest version.]
+    G --> H{Plan to use latest version of Python BY DEFAULT, UNLESS the new project package requires an older version}
+    H --> I[Alert user latest version of Python will be used. Ask whether to use a different version, if not specified in requirements file]
+    I --> J[Get channels used in conda configuration, if available]
+    J --> K[Get environments available locally]
+    K --> L[Create new environment]
+    L --> M[Install packages in environment]
+    M --> N[Save the versions of the packages to a file]
+    N --> O[End]
