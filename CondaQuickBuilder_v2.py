@@ -20,21 +20,27 @@ log_filename = datetime.datetime.now().strftime("%Y%m%d%H%M%S") + "_CondaQuickBu
 logging.basicConfig(filename=log_filename, level=logging.DEBUG)
 print(f"\nLog file '{log_filename}' has been created in: {os.getcwd()}\n")  # FOR DEBUGGING
 
-# TODO: convert this try-except block to a function and add a docstring to it
-try:
-    # Get the latest version of Python available
-    result = requests.get("https://endoflife.date/api/python.json")
-    parsed_result = result.json()
-    logging.info(f"parsed_result {parsed_result}")
+def get_latest_python_version():
+    """
+    Get the latest version of Python available.
 
-    last_python_version =  str(parsed_result[0]["latest"])
-    logging.info(f"latest_python_version {last_python_version}")
-except Exception as e:
-    logging.error(f"Error occurred while getting the latest Python version: {e}")
+    Returns:
+    str: The latest version of Python
+    """
+    try:
+        result = requests.get("https://endoflife.date/api/python.json")
+        parsed_result = result.json()
+        logging.info(f"parsed_result {parsed_result}")
+
+        latest_python_version = str(parsed_result[0]["latest"])
+        logging.info(f"latest_python_version {latest_python_version}")
+        return latest_python_version
+    except Exception as e:
+        logging.error(f"Error occurred while getting the latest Python version: {e}")
 
 # Define the minimum and maximum acceptable Python versions
-MIN_PYTHON_VERSION = parse("2.0")
-MAX_PYTHON_VERSION = parse(last_python_version)
+MIN_PYTHON_VERSION = 3.6
+MAX_PYTHON_VERSION = parse(latest_python_version)
 
 def unzip_starter_project_repo():
     """
@@ -282,16 +288,6 @@ def search_package(package, package_sign, package_version, channels_list):
 
 # TODO: make main() into a separate function that is the main "entry point" for the program.  
 
-# TODO: get logic clearer and more organized for main:
-# 1. Unzip the starter project repository
-# 2. Ask the user for the Python version
-# 3. Parse the requirements file
-# 4. Get the list of channels
-# 5. Get the list of environments
-# 6. Create a new environment
-# 7. Install the packages in the environment
-# 8. Save the versions of the packages (?) to a file
-
     
 # TODO: After each step, add a log message to indicate that the step has been completed successfully.
     
@@ -302,7 +298,7 @@ if __name__ == "__main__":
     
     try: 
         while True:
-            # TODO: ask the user if they want to use the latest Pythnon version or if not, which earlier version they want to use.
+            # TODO: ask the user if they want to use the latest Python version or if not, which earlier version they want to use.
             python_version = input("Enter Python version for environment (e.g., 3.7.4): ")
             
             # Check if the entered version matches the pattern for Python versions

@@ -9,6 +9,27 @@ Created On: 2024.02.21 2206h
 
 TODO: Prompt Sequence: refine steps below to prepare them for Copilot or ChatGPT prompts.
 
+# LOGIC SEQUENCE
+# TODO: get logic clearer and more organized for main:
+# 1. Unzip the starter project repository
+# 1b. Clone the starter project repository directly from GitHub
+# 1c. Determine whether there is a environments.yml file or a requirements.txt file
+# 1d. If there is an environments.yml file, use it to create the environment
+# 1e. If there is a requirements.txt file, use it to create the environment
+# 1f. If there is a Poetry spec (pyproject.toml) instead of a environments.yml or requirements.txt file, ask the user what to do next, or use the Poetry spec to create the environment.   
+#    Version 1.0+ of CondaQuickBuilder will not support Poetry, but it can be added in a future version.
+# 3. Parse the requirements file
+
+# 2. Plan to use latest version of Python BY DEFAULT, UNLESS the new project package requires an older version
+# 2b. Alert the user that latest version of Python will be used.  Ask thes if they want to use a different version, if it is not specified in the requirements file
+
+
+# 4. Get the list of channels used in the conda configuration (if available)
+# 5. Get the list of environments availble locally
+# 6. Create a new environment
+# 7. Install the packages in the environment
+# 8. Save the versions of the packages (?) to a file
+
 1) For this project, the name is "CondaQuickBuilder"
 
 2a) CondaQuickBuilder is an automated tool designed to accelerate the setup of new projects by building a new Conda environment from an existing project repository package.
@@ -122,8 +143,6 @@ Below are the list of likely functions needed that are known thus far:
           call "pip install pip_packages_list"
 
           function: handle_installation_exceptions()
-
-
 
 
     1) monitor installation process, and handle exceptions: 
