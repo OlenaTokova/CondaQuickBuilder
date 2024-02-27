@@ -2,9 +2,10 @@
 ## This document extracts functions identified in document: 
 ## CondaQuickBuilder_Project_Description-2024.02.17-1507h 
 
-Defines "function flow" matching the workflow defined as detailed steps.
+Defines "function flow" matching the workflow defined as "detailed steps".
 
 Created On: 2024.02.21 2206h
+Updated On: 2024.02.27 1853h
 (this markdown file replaced the YAML file with the same name.)
 
 TODO: Prompt Sequence: refine steps below to prepare them for Copilot or ChatGPT prompts.
@@ -111,14 +112,14 @@ Below are the list of likely functions needed that are known thus far:
           handle "locally"  (locally in the new conda environment)
           postpone conda update (not_now)
 
-    b) function: conda_activate() 
+    b1) function: conda_activate() 
             "conda activate {new_env}"
 
           handle conda update "locally"  (locally in the new conda environment)
 
-     b2)  function: update_conda_locally():
+     b2)  function: update_local_conda_env():
            
-           "call conda update conda --name {new_env}"
+           "call conda update conda --name {new_env} --channel conda-forge"
 
     c) call search_conda_forge() to get conda_forge_search_results
 
@@ -138,14 +139,14 @@ Below are the list of likely functions needed that are known thus far:
 
         function: handle_installation_exceptions()
 
-    d) function: install_pip_packages() 
+    f) function: install_pip_packages() 
 
           call "pip install pip_packages_list"
 
           function: handle_installation_exceptions()
 
 
-    1) monitor installation process, and handle exceptions: 
+    g) monitor installation process, and handle exceptions: 
         Types of Exceptions: 
             "package not found", 
             "specified version not found"
