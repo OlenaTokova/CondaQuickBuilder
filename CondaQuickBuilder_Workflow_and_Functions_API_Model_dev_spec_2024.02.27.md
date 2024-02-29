@@ -31,11 +31,11 @@ TODO: Prompt Sequence: refine steps below to prepare them for Copilot or ChatGPT
 # 7. Install the packages in the environment
 # 8. Save the versions of the packages (?) to a file
 
-1) For this project, the name is "CondaQuickBuilder"
+1) project_name = "CondaQuickBuilder"
 
-2a) CondaQuickBuilder is an automated tool designed to accelerate the setup of new projects by building a new Conda environment from an existing project repository package.
+2) Project_description = "CondaQuickBuilder is an automated tool designed to accelerate the setup of new projects by building a new Conda environment from an existing project repository package."
 
-Below are the list of likely functions needed that are known thus far: 
+List of likely functions known as needed: 
 
 3) TODO: SETUP CODE INSTRUMENTATION: 
     configure logging:
@@ -43,19 +43,19 @@ Below are the list of likely functions needed that are known thus far:
 
 4) TODO: User enters target repo: https://github.com/streamlit/streamlit-hello/
 
-4a) TODO: function: fetch_remote_repo()
+5) TODO: function: fetch_remote_repo()
 
-4b) TODO: function: get_new_project_name()
+6) TODO: function: get_new_project_name()
         """get name from zip file"""
         return project_name
 
-5) DONE: function: unzip_starter_project_repo()
+7) DONE: function: unzip_starter_project_repo()
 
-6) function: scan_project_modules()
+8) function: scan_project_modules()
     """Scans modules in fetched remote repo to get  names of dependent packages."""  
     return_value: py_dependencies_set
 
-7) function: scan_existing_envs()
+9) function: scan_existing_envs()
         return:  current_env_dependencies_set
 
         scan (ALL?) our local pre-existing virtual environments 
@@ -63,13 +63,13 @@ Below are the list of likely functions needed that are known thus far:
         function: scan_existing_env()
             current_env_dependencies_set
     
-8) function: measure_env_fit() ???? 
+10) function: measure_env_fit() ???? 
         take set (lists, tuple or other?) of environment packages 
         do package "match and score" operation 
         identify "best" fit of current environments' dependency trees,
         return the one(s) that match.
 
-9) function: repo_search(): 
+11) function: repo_search(): 
 
     Do conditional searches for packages in the following order:
 
@@ -90,11 +90,11 @@ Below are the list of likely functions needed that are known thus far:
 
     return conda_forge_search_results, anaconda_search_results, pip_search_results
 
-10) function: build_repos_lists()
+12) function: build_repos_lists()
 
-11) set conda_channel_priority = ["conda-forge", "anaconda", "pypi"]
+13) set conda_channel_priority = ["conda-forge", "anaconda", "pypi"]
 
-12) create Python functions (or separate script commands?) needed to execute the environment build steps.
+14) create Python functions (or separate script commands?) needed to execute the environment build steps.
 
     a) function: create_conda_core_env() 
 
@@ -102,7 +102,7 @@ Below are the list of likely functions needed that are known thus far:
 
         if conda create throws "warning prompt" to upgrade conda:
 
-    a2) handle_conda_update_prompt() 
+            handle_conda_update_prompt() 
 
         if conda create throws "conda update warning prompt" to upgrade conda:
 
@@ -112,16 +112,16 @@ Below are the list of likely functions needed that are known thus far:
           handle "locally"  (locally in the new conda environment)
           postpone conda update (not_now)
 
-    b1) function: conda_activate() 
-            "conda activate {new_env}"
+    b) function: conda_activate() 
+            call "conda activate {new_env}"
 
-          handle conda update "locally"  (locally in the new conda environment)
+        if handle conda update "locally"  (locally in the new conda environment)
 
-     b2)  function: update_local_conda_env():
-           
-           "call conda update conda --name {new_env} --channel conda-forge"
+            call function: update_local_conda_env():
+                
+                which executes terminal command "call conda update conda --name {new_env} --channel conda-forge"
 
-    c) call search_conda_forge() to get conda_forge_search_results
+    c) call function search_conda_forge() to get list of packages from conda_forge_search_results()
 
     d) function: install_conda_forge_packages_list() 
 
@@ -158,4 +158,4 @@ Below are the list of likely functions needed that are known thus far:
             [conda install -c anaconda (???)]
             [conda install -c conda-OTHER
 
-        d) pip install ... all remaining packages that are NOT available in conda format
+    h) pip install ... all remaining packages that are NOT available in conda format
