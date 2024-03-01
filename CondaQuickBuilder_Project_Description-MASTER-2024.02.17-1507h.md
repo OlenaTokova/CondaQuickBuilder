@@ -1,4 +1,3 @@
-
 ## End-to-end AI-Powered Project Example: ORIGINAL MESSAGE (LEARNING ASSIGNMENT)
 
 	This version of the original file was copied from:
@@ -39,6 +38,14 @@
 
 	Tasks:
 
+    Define and Describe Project Purpose & Requirements
+        1) create a catchy project title 
+        2) articulate 1-paragraph description that:
+            a) defines the "business problem"
+            b) describes technical solution to solve business problem
+        3) articulate project scope, requirements, and constraints
+        4) detail out requirements to a workflow and function flow outline
+        5) generate code using Copilot
 
 	team project example for Automated Conda Environment Builder Tool
 
@@ -51,15 +58,21 @@
 
 ## Project Description: Develop Automated [conda] Project Environment Builder Product
 
-### Start Date:  2024.02.07
-### End Date:    2024.02.12
+### Start Date:         2024.02.07
+### End Date (target):  2024.02.12
+
+Updated On: 2024.02.29
+Updated By: Rich Lysakowski
 
 ### Project Participants:
     Olena Tokova, Hilary Shea, Nadia Stoyanova, Rocio Calle, 
     Monzia Moodie, Biraja Dash, Pankaj Verma, Cesar Anderson, Anil Naik, others
 
-### Lead Scribe: Rich Lysakowski
+### Lead Scribe: 
+    Rich Lysakowski
 ### Testers
+    Olena Tokova, Hilary Shea, Nadia Stoyanova, Rocio Calle, 
+    Monzia Moodie, Biraja Dash, Pankaj Verma, Cesar Anderson, Anil Naik, others
 
 ### Project Workflow to create a tool with Copilot in VScode 
     Workflow Methodology (Steps to create a tool)
@@ -70,22 +83,29 @@
 
     The CondaQuickBuilder "product" is a vehicle chosen to forward the learning process.  
     
-    This project was chosen because it is sufficiently detailed to require some requirement from the original vision, through implementation and delivery in a team context.  
+    Derive requirements from an original vision, go through specificatin, implementation and delivery by a team.  
 
 ### Product Purpose: Create End-to-end Automated Software Tool to generate Python script that builds a new conda environment from a project repository package.
 
 ### Learning Goals and Deliverables: 
 
-    TODO: distinquish between skills and knowledge deliverables and software deliverable(s)
+    #### Skills and Knowledge Deliverables: 
+        Use conda to build environments (manually) step-by-step
+        Use Python to execute terminal commands
+        Define high-level business problem and solution CONCISELY
+        Detail requirements to workflow, then down to pseudo-code function outline
+        Use git, Github, Github-Desktop to collaboratively develop and version control code 
+        TODO: add other specific skills
 
-    Skills Deliverables: TODO: 
-    Main Product Deliverable: End-to-end Automated Tool to generate Python script that builds a new conda environment from a project repository package
+    #### Software Product Deliverable: "CondaQuickBuilder"
+        An end-to-end Automated Tool to build new conda environments from Github repo packages
 
-    TODO: refine and combine all parts of this section into a coherent and concise description: 
+    #### Development Process:  TODO: Refine all parts of this section into a coherent and concise description: 
     a) Step through 6D-Agile Product Define-to-Deliver Process 
-    b) Create a production version of the tool that automatically sets up working conda environment when starting a new development project. 
+    b) Create production tool to automatically create conda environment to start new development projects. 
     c) Provide a useful tool for people to use to accelerate their work.
-    d) Post-project goal stretch goal: articulate requirements for a "meta-tool" to automate build similar scope tools 
+    d) Post-Project Stretch goal: 
+        Articulate requirements for a "meta-tool" to automate build similar scope tools 
 
 #############################################################
 
@@ -98,7 +118,7 @@
    
 
 ### Business Problem Statement: 
-    In the fast-paced world of software development, setting up new project environments can be a time-consuming and error-prone process. Developers often need to manually create a new Conda environment and install necessary dependencies based on the contents of a project repository package. This manual process can lead to inconsistencies across different environments and slow down the overall development process, reducing productivity and efficiency. Doing this quickly requires expertise and experience as well as methodology that is informed by experience. The issue of broken environments leading to the waste of time.
+    In the fast-paced world of software development, setting up new project environments can be a time-consuming and error-prone process.  Developers often need to create  new Conda environments for AI, Data Science, and Analytics projects.  It is more efficient to leverage pre-existing project code respositories and install necessary dependencies based on the contents of a project repository package.  This is a manual process can lead to inconsistencies across different environments and slow down overall development, and reduce productivity and efficiency.  Conda is needed because data science projects often use packages written in multiple programming languages (Python, JavaScript, HTML, SQL, C++, others).  Pip, pipenv, venv, Poetry and other virtual environment managers are Python-only.  Building virtual envioronments quickly requires expertise and experience, and a  methodology informed by experience.  If not done systematically, it can lead to broken environments due to incompatible packages, which wastes considerable amounts of time.
 
 		TODO: ***Make the business problem description more concise if possible.***
 		
@@ -115,7 +135,6 @@
             A) clearly identify the nouns/objects and the verbs/functions, 
             B) adjective/metrics/measures are usually used to define product characteristics like the "ilties" for performance, usability, maintainability, reliability, etc.
         
-
 
 ## Product Define Phase
 
@@ -193,8 +212,10 @@
 			
 		## pytest: The testing framework for Python (use this for the development version only)
 
-    ### REQUIREMENTS SCOPE TODO: move scope statements to this section
+#### REQUIREMENTS SCOPE TODO: move scope statements to this section
+
     #### WHAT'S IN-SCOPE
+
     #### WHAT'S OUT-OF-SCOPE
 
 ###### TODO: Project Scope: 
@@ -421,7 +442,7 @@ Describe exactly how to use the environment, or the code: step by step, algorith
 
 
 
-# FOLLOW-ON PROJECT USING LANGCHAIN 
+## FOLLOW-ON PROJECT USING LANGCHAIN 
 
 Purpose: Build Automated Tool for Building Tools
     A Lower-code forms-driven way to automate the process of building  tools and utilities using LLMs
@@ -435,9 +456,3 @@ Zoomed out of item.
 
 
 
-### Define and Describe Project Purpose & Requirements
-    1) create a catchy project title 
-    2) articulate 1-paragraph description that:
-        a) defines the "business problem"
-        b) describes technical solution to solve business problem
-    3) articulate project scrope, requirements, and constraints

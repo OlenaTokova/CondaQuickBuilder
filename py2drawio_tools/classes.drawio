@@ -1,0 +1,13 @@
+<mxfile host="65bd71144e">
+    <diagram id="UKDP8YCLJQ3nreD4ezvp" name="Page-1">
+        <mxGraphModel dx="1398" dy="1182" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="erDiagram&#10;    CUSTOMER ||--o{ ORDER : places&#10;    ORDER ||--|{ LINE-ITEM : contains&#10;    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses" style="shadow=0;dashed=0;align=left;strokeWidth=1;shape=mxgraph.mermaid.abstract.mermaid;labelBackgroundColor=#ffffff;noLabel=1;theme=default;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="290" width="400" height="500" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

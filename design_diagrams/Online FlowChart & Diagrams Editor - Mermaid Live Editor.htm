@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online FlowChart &amp; Diagrams Editor - Mermaid Live Editor</title>
+    <meta name="og:image" content="https://github.com/mermaid-js/mermaid/raw/develop/img/header.png">
+    <link rel="canonical" href="https://mermaid.live/">
+    <meta name="description" content="Simplify documentation and avoid heavy tools. Open source Visio Alternative. Commonly used for explaining your code! Mermaid is a simple markdown-like script language for generating charts from text via javascript.">
+    <link rel="icon" type="image/png" href="https://mermaid.live/favicon.svg">
+    <link rel="mask-icon" href="https://mermaid.live/favicon.svg" color="#000000">
+    <meta name="theme-color" content="#6366F1">
+    <link rel="manifest" href="https://mermaid.live/manifest.json">
+    <link rel="stylesheet" href="Online%20FlowChart%20&amp;%20Diagrams%20Editor%20-%20Mermaid%20Live%20Editor_files/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+		<link rel="modulepreload" href="https://mermaid.live/_app/immutable/entry/start.7opflHqr.js">
+		<link rel="modulepreload" href="https://mermaid.live/_app/immutable/chunks/entry.XJ4CcTsJ.js">
+		<link rel="modulepreload" href="https://mermaid.live/_app/immutable/chunks/scheduler.cpTKU-jy.js">
+		<link rel="modulepreload" href="https://mermaid.live/_app/immutable/chunks/index.A6lwdtpV.js">
+		<link rel="modulepreload" href="https://mermaid.live/_app/immutable/chunks/paths.BPKZFREx.js">
+		<link rel="modulepreload" href="https://mermaid.live/_app/immutable/entry/app.sItQb3iP.js">
+		<link rel="modulepreload" href="https://mermaid.live/_app/immutable/chunks/preload-helper.0HuHagjb.js">
+		<link rel="modulepreload" href="https://mermaid.live/_app/immutable/chunks/index.5fz8G11a.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/nodes/0._tNviGzf.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/state.2smS4BCC.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/theme.19fURhoF.js"><link rel="stylesheet" href="Online%20FlowChart%20&amp;%20Diagrams%20Editor%20-%20Mermaid%20Live%20Editor_files/0.DHWajbWa.css"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/nodes/1.hI5U1nqj.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/nodes/3.jR0Bi25O.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/3.WsFheWbO.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/View.ay9w1fx-.js"><link rel="stylesheet" href="Online%20FlowChart%20&amp;%20Diagrams%20Editor%20-%20Mermaid%20Live%20Editor_files/View.XlLonFwl.css"><link rel="stylesheet" href="Online%20FlowChart%20&amp;%20Diagrams%20Editor%20-%20Mermaid%20Live%20Editor_files/3.QEMkRLjH.css"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/flowDiagram-v2-49332944.ISUO4C-Z.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/flowDb-d35e309a.fDAKgt-r.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/styles-7383a064._Z-CFxV1.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/graph.gcd86H6u.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/index-8fae9850.8hVO0Oqu.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/layout.yS_BYPvQ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/clone.Z-tMReTD.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/edges-d417c7a0.2T3757I5.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/createText-423428c9.-U9FqHxS.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/line.699qbnkv.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/array.Nw74a44z.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/path.aUcfwwLI.js"><link rel="modulepreload" as="script" crossorigin="" href="https://mermaid.live/_app/immutable/chunks/channel.MxqEC_Iu.js"><style type="text/css" media="screen" class="monaco-colors">.codicon-add:before { content: '\ea60'; }
+.codicon-plus:before { content: '\ea60'; }
+.codicon-gist-new:before { content: '\ea60'; }
+.codicon-repo-create:before { content: '\ea60'; }
+.codicon-lightbulb:before { content: '\ea61'; }
+.codicon-light-bulb:before { content: '\ea61'; }
+.codicon-repo:before { content: '\ea62'; }
+.codicon-repo-delete:before { content: '\ea62'; }
+.codicon-gist-fork:before { content: '\ea63'; }
+.codicon-repo-forked:before { content: '\ea63'; }
+.codicon-git-pull-request:before { content: '\ea64'; }
+.codicon-git-pull-request-abandoned:before { content: '\ea64'; }
+.codicon-record-keys:before { content: '\ea65'; }
+.codicon-keyboard:before { content: '\ea65'; }
+.codicon-tag:before { content: '\ea66'; }
+.codicon-tag-add:before { content: '\ea66'; }
+.codicon-tag-remove:before { content: '\ea66'; }
+.codicon-git-pull-request-label:before { content: '\ea66'; }
+.codicon-person:before { content: '\ea67'; }
+.codicon-person-follow:before { content: '\ea67'; }
+.codicon-person-outline:before { content: '\ea67'; }
+.codicon-person-filled:before { content: '\ea67'; }
+.codicon-git-branch:before { content: '\ea68'; }
+.codicon-git-branch-create:before { content: '\ea68'; }
+.codicon-git-branch-delete:before { content: '\ea68'; }
+.codicon-source-control:before { content: '\ea68'; }
+.codicon-mirror:before { content: '\ea69'; }
+.codicon-mirror-public:before { content: '\ea69'; }
+.codicon-star:before { content: '\ea6a'; }
+.codicon-star-add:before { content: '\ea6a'; }
+.codicon-star-delete:before { content: '\ea6a'; }
+.codicon-star-empty:before { content: '\ea6a'; }
+.codicon-comment:before { content: '\ea6b'; }
+.codicon-comment-add:before { content: '\ea6b'; }
+.codicon-alert:before { content: '\ea6c'; }
+.codicon-warning:before { content: '\ea6c'; }
+.codicon-search:before { content: '\ea6d'; }
+.codicon-search-save:before { content: '\ea6d'; }
+.codicon-log-out:before { content: '\ea6e'; }
+.codicon-sign-out:before { content: '\ea6e'; }
+.codicon-log-in:before { content: '\ea6f'; }
+.codicon-sign-in:before { content: '\ea6f'; }
+.codicon-eye:before { content: '\ea70'; }
+.codicon-eye-unwatch:before { content: '\ea70'; }
+.codicon-eye-watch:before { content: '\ea70'; }
+.codicon-circle-filled:before { content: '\ea71'; }
+.codicon-primitive-dot:before { content: '\ea71'; }
+.codicon-close-dirty:before { content: '\ea71'; }
+.codicon-debug-breakpoint:before { content: '\ea71'; }
+.codicon-debug-breakpoint-disabled:before { content: '\ea71'; }
+.codicon-debug-hint:before { content: '\ea71'; }
+.codicon-primitive-square:before { content: '\ea72'; }
+.codicon-edit:before { content: '\ea73'; }
+.codicon-pencil:before { content: '\ea73'; }
+.codicon-info:before { content: '\ea74'; }
+.codicon-issue-opened:before { content: '\ea74'; }
+.codicon-gist-private:before { content: '\ea75'; }
+.codicon-git-fork-private:before { content: '\ea75'; }
+.codicon-lock:before { content: '\ea75'; }
+.codicon-mirror-private:before { content: '\ea75'; }
+.codicon-close:before { content: '\ea76'; }
+.codicon-remove-close:before { content: '\ea76'; }
+.codicon-x:before { content: '\ea76'; }
+.codicon-repo-sync:before { content: '\ea77'; }
+.codicon-sync:before { content: '\ea77'; }
+.codicon-clone:before { content: '\ea78'; }
+.codicon-desktop-download:before { content: '\ea78'; }
+.codicon-beaker:before { content: '\ea79'; }
+.codicon-microscope:before { content: '\ea79'; }
+.codicon-vm:before { content: '\ea7a'; }
+.codicon-device-desktop:before { content: '\ea7a'; }
+.codicon-file:before { content: '\ea7b'; }
+.codicon-file-text:before { content: '\ea7b'; }
+.codicon-more:before { content: '\ea7c'; }
+.codicon-ellipsis:before { content: '\ea7c'; }
+.codicon-kebab-horizontal:before { content: '\ea7c'; }
+.codicon-mail-reply:before { content: '\ea7d'; }
+.codicon-reply:before { content: '\ea7d'; }
+.codicon-organization:before { content: '\ea7e'; }
+.codicon-organization-filled:before { content: '\ea7e'; }
+.codicon-organization-outline:before { content: '\ea7e'; }
+.codicon-new-file:before { content: '\ea7f'; }
+.codicon-file-add:before { content: '\ea7f'; }
+.codicon-new-folder:before { content: '\ea80'; }
+.codicon-file-directory-create:before { content: '\ea80'; }
+.codicon-trash:before { content: '\ea81'; }
+.codicon-trashcan:before { content: '\ea81'; }
+.codicon-history:before { content: '\ea82'; }
+.codicon-clock:before { content: '\ea82'; }
+.codicon-folder:before { content: '\ea83'; }
+.codicon-file-directory:before { content: '\ea83'; }
+.codicon-symbol-folder:before { content: '\ea83'; }
+.codicon-logo-github:before { content: '\ea84'; }
+.codicon-mark-github:before { content: '\ea84'; }
+.codicon-github:before { content: '\ea84'; }
+.codicon-terminal:before { content: '\ea85'; }
+.codicon-console:before { content: '\ea85'; }
+.codicon-repl:before { content: '\ea85'; }
+.codicon-zap:before { content: '\ea86'; }
+.codicon-symbol-event:before { content: '\ea86'; }
+.codicon-error:before { content: '\ea87'; }
+.codicon-stop:before { content: '\ea87'; }
+.codicon-variable:before { content: '\ea88'; }
+.codicon-symbol-variable:before { content: '\ea88'; }
+.codicon-array:before { content: '\ea8a'; }
+.codicon-symbol-array:before { content: '\ea8a'; }
+.codicon-symbol-module:before { content: '\ea8b'; }
+.codicon-symbol-package:before { content: '\ea8b'; }
+.codicon-symbol-namespace:before { content: '\ea8b'; }
+.codicon-symbol-object:before { content: '\ea8b'; }
+.codicon-symbol-method:before { content: '\ea8c'; }
+.codicon-symbol-function:before { content: '\ea8c'; }
+.codicon-symbol-constructor:before { content: '\ea8c'; }
+.codicon-symbol-boolean:before { content: '\ea8f'; }
+.codicon-symbol-null:before { content: '\ea8f'; }
+.codicon-symbol-numeric:before { content: '\ea90'; }
+.codicon-symbol-number:before { content: '\ea90'; }
+.codicon-symbol-structure:before { content: '\ea91'; }
+.codicon-symbol-struct:before { content: '\ea91'; }
+.codicon-symbol-parameter:before { content: '\ea92'; }
+.codicon-symbol-type-parameter:before { content: '\ea92'; }
+.codicon-symbol-key:before { content: '\ea93'; }
+.codicon-symbol-text:before { content: '\ea93'; }
+.codicon-symbol-reference:before { content: '\ea94'; }
+.codicon-go-to-file:before { content: '\ea94'; }
+.codicon-symbol-enum:before { content: '\ea95'; }
+.codicon-symbol-value:before { content: '\ea95'; }
+.codicon-symbol-ruler:before { content: '\ea96'; }
+.codicon-symbol-unit:before { content: '\ea96'; }
+.codicon-activate-breakpoints:before { content: '\ea97'; }
+.codicon-archive:before { content: '\ea98'; }
+.codicon-arrow-both:before { content: '\ea99'; }
+.codicon-arrow-down:before { content: '\ea9a'; }
+.codicon-arrow-left:before { content: '\ea9b'; }
+.codicon-arrow-right:before { content: '\ea9c'; }
+.codicon-arrow-small-down:before { content: '\ea9d'; }
+.codicon-arrow-small-left:before { content: '\ea9e'; }
+.codicon-arrow-small-right:before { content: '\ea9f'; }
+.codicon-arrow-small-up:before { content: '\eaa0'; }
+.codicon-arrow-up:before { content: '\eaa1'; }
+.codicon-bell:before { content: '\eaa2'; }
+.codicon-bold:before { content: '\eaa3'; }
+.codicon-book:before { content: '\eaa4'; }
+.codicon-bookmark:before { content: '\eaa5'; }
+.codicon-debug-breakpoint-conditional-unverified:before { content: '\eaa6'; }
+.codicon-debug-breakpoint-conditional:before { content: '\eaa7'; }
+.codicon-debug-breakpoint-conditional-disabled:before { content: '\eaa7'; }
+.codicon-debug-breakpoint-data-unverified:before { content: '\eaa8'; }
+.codicon-debug-breakpoint-data:before { content: '\eaa9'; }
+.codicon-debug-breakpoint-data-disabled:before { content: '\eaa9'; }
+.codicon-debug-breakpoint-log-unverified:before { content: '\eaaa'; }
+.codicon-debug-breakpoint-log:before { content: '\eaab'; }
+.codicon-debug-breakpoint-log-disabled:before { content: '\eaab'; }
+.codicon-briefcase:before { content: '\eaac'; }
+.codicon-broadcast:before { content: '\eaad'; }
+.codicon-browser:before { content: '\eaae'; }
+.codicon-bug:before { content: '\eaaf'; }
+.codicon-calendar:before { content: '\eab0'; }
+.codicon-case-sensitive:before { content: '\eab1'; }
+.codicon-check:before { content: '\eab2'; }
+.codicon-checklist:before { content: '\eab3'; }
+.codicon-chevron-down:before { content: '\eab4'; }
+.codicon-drop-down-button:before { content: '\eab4'; }
+.codicon-chevron-left:before { content: '\eab5'; }
+.codicon-chevron-right:before { content: '\eab6'; }
+.codicon-chevron-up:before { content: '\eab7'; }
+.codicon-chrome-close:before { content: '\eab8'; }
+.codicon-chrome-maximize:before { content: '\eab9'; }
+.codicon-chrome-minimize:before { content: '\eaba'; }
+.codicon-chrome-restore:before { content: '\eabb'; }
+.codicon-circle:before { content: '\eabc'; }
+.codicon-circle-outline:before { content: '\eabc'; }
+.codicon-debug-breakpoint-unverified:before { content: '\eabc'; }
+.codicon-circle-slash:before { content: '\eabd'; }
+.codicon-circuit-board:before { content: '\eabe'; }
+.codicon-clear-all:before { content: '\eabf'; }
+.codicon-clippy:before { content: '\eac0'; }
+.codicon-close-all:before { content: '\eac1'; }
+.codicon-cloud-download:before { content: '\eac2'; }
+.codicon-cloud-upload:before { content: '\eac3'; }
+.codicon-code:before { content: '\eac4'; }
+.codicon-collapse-all:before { content: '\eac5'; }
+.codicon-color-mode:before { content: '\eac6'; }
+.codicon-comment-discussion:before { content: '\eac7'; }
+.codicon-compare-changes:before { content: '\eafd'; }
+.codicon-credit-card:before { content: '\eac9'; }
+.codicon-dash:before { content: '\eacc'; }
+.codicon-dashboard:before { content: '\eacd'; }
+.codicon-database:before { content: '\eace'; }
+.codicon-debug-continue:before { content: '\eacf'; }
+.codicon-debug-disconnect:before { content: '\ead0'; }
+.codicon-debug-pause:before { content: '\ead1'; }
+.codicon-debug-restart:before { content: '\ead2'; }
+.codicon-debug-start:before { content: '\ead3'; }
+.codicon-debug-step-into:before { content: '\ead4'; }
+.codicon-debug-step-out:before { content: '\ead5'; }
+.codicon-debug-step-over:before { content: '\ead6'; }
+.codicon-debug-stop:before { content: '\ead7'; }
+.codicon-debug:before { content: '\ead8'; }
+.codicon-device-camera-video:before { content: '\ead9'; }
+.codicon-device-camera:before { content: '\eada'; }
+.codicon-device-mobile:before { content: '\eadb'; }
+.codicon-diff-added:before { content: '\eadc'; }
+.codicon-diff-ignored:before { content: '\eadd'; }
+.codicon-diff-modified:before { content: '\eade'; }
+.codicon-diff-removed:before { content: '\eadf'; }
+.codicon-diff-renamed:before { content: '\eae0'; }
+.codicon-diff:before { content: '\eae1'; }
+.codicon-discard:before { content: '\eae2'; }
+.codicon-editor-layout:before { content: '\eae3'; }
+.codicon-empty-window:before { content: '\eae4'; }
+.codicon-exclude:before { content: '\eae5'; }
+.codicon-extensions:before { content: '\eae6'; }
+.codicon-eye-closed:before { content: '\eae7'; }
+.codicon-file-binary:before { content: '\eae8'; }
+.codicon-file-code:before { content: '\eae9'; }
+.codicon-file-media:before { content: '\eaea'; }
+.codicon-file-pdf:before { content: '\eaeb'; }
+.codicon-file-submodule:before { content: '\eaec'; }
+.codicon-file-symlink-directory:before { content: '\eaed'; }
+.codicon-file-symlink-file:before { content: '\eaee'; }
+.codicon-file-zip:before { content: '\eaef'; }
+.codicon-files:before { content: '\eaf0'; }
+.codicon-filter:before { content: '\eaf1'; }
+.codicon-flame:before { content: '\eaf2'; }
+.codicon-fold-down:before { content: '\eaf3'; }
+.codicon-fold-up:before { content: '\eaf4'; }
+.codicon-fold:before { content: '\eaf5'; }
+.codicon-folder-active:before { content: '\eaf6'; }
+.codicon-folder-opened:before { content: '\eaf7'; }
+.codicon-gear:before { content: '\eaf8'; }
+.codicon-gift:before { content: '\eaf9'; }
+.codicon-gist-secret:before { content: '\eafa'; }
+.codicon-gist:before { content: '\eafb'; }
+.codicon-git-commit:before { content: '\eafc'; }
+.codicon-git-compare:before { content: '\eafd'; }
+.codicon-git-merge:before { content: '\eafe'; }
+.codicon-github-action:before { content: '\eaff'; }
+.codicon-github-alt:before { content: '\eb00'; }
+.codicon-globe:before { content: '\eb01'; }
+.codicon-grabber:before { content: '\eb02'; }
+.codicon-graph:before { content: '\eb03'; }
+.codicon-gripper:before { content: '\eb04'; }
+.codicon-heart:before { content: '\eb05'; }
+.codicon-home:before { content: '\eb06'; }
+.codicon-horizontal-rule:before { content: '\eb07'; }
+.codicon-hubot:before { content: '\eb08'; }
+.codicon-inbox:before { content: '\eb09'; }
+.codicon-issue-closed:before { content: '\eba4'; }
+.codicon-issue-reopened:before { content: '\eb0b'; }
+.codicon-issues:before { content: '\eb0c'; }
+.codicon-italic:before { content: '\eb0d'; }
+.codicon-jersey:before { content: '\eb0e'; }
+.codicon-json:before { content: '\eb0f'; }
+.codicon-bracket:before { content: '\eb0f'; }
+.codicon-kebab-vertical:before { content: '\eb10'; }
+.codicon-key:before { content: '\eb11'; }
+.codicon-law:before { content: '\eb12'; }
+.codicon-lightbulb-autofix:before { content: '\eb13'; }
+.codicon-link-external:before { content: '\eb14'; }
+.codicon-link:before { content: '\eb15'; }
+.codicon-list-ordered:before { content: '\eb16'; }
+.codicon-list-unordered:before { content: '\eb17'; }
+.codicon-live-share:before { content: '\eb18'; }
+.codicon-loading:before { content: '\eb19'; }
+.codicon-location:before { content: '\eb1a'; }
+.codicon-mail-read:before { content: '\eb1b'; }
+.codicon-mail:before { content: '\eb1c'; }
+.codicon-markdown:before { content: '\eb1d'; }
+.codicon-megaphone:before { content: '\eb1e'; }
+.codicon-mention:before { content: '\eb1f'; }
+.codicon-milestone:before { content: '\eb20'; }
+.codicon-git-pull-request-milestone:before { content: '\eb20'; }
+.codicon-mortar-board:before { content: '\eb21'; }
+.codicon-move:before { content: '\eb22'; }
+.codicon-multiple-windows:before { content: '\eb23'; }
+.codicon-mute:before { content: '\eb24'; }
+.codicon-no-newline:before { content: '\eb25'; }
+.codicon-note:before { content: '\eb26'; }
+.codicon-octoface:before { content: '\eb27'; }
+.codicon-open-preview:before { content: '\eb28'; }
+.codicon-package:before { content: '\eb29'; }
+.codicon-paintcan:before { content: '\eb2a'; }
+.codicon-pin:before { content: '\eb2b'; }
+.codicon-play:before { content: '\eb2c'; }
+.codicon-run:before { content: '\eb2c'; }
+.codicon-plug:before { content: '\eb2d'; }
+.codicon-preserve-case:before { content: '\eb2e'; }
+.codicon-preview:before { content: '\eb2f'; }
+.codicon-project:before { content: '\eb30'; }
+.codicon-pulse:before { content: '\eb31'; }
+.codicon-question:before { content: '\eb32'; }
+.codicon-quote:before { content: '\eb33'; }
+.codicon-radio-tower:before { content: '\eb34'; }
+.codicon-reactions:before { content: '\eb35'; }
+.codicon-references:before { content: '\eb36'; }
+.codicon-refresh:before { content: '\eb37'; }
+.codicon-regex:before { content: '\eb38'; }
+.codicon-remote-explorer:before { content: '\eb39'; }
+.codicon-remote:before { content: '\eb3a'; }
+.codicon-remove:before { content: '\eb3b'; }
+.codicon-replace-all:before { content: '\eb3c'; }
+.codicon-replace:before { content: '\eb3d'; }
+.codicon-repo-clone:before { content: '\eb3e'; }
+.codicon-repo-force-push:before { content: '\eb3f'; }
+.codicon-repo-pull:before { content: '\eb40'; }
+.codicon-repo-push:before { content: '\eb41'; }
+.codicon-report:before { content: '\eb42'; }
+.codicon-request-changes:before { content: '\eb43'; }
+.codicon-rocket:before { content: '\eb44'; }
+.codicon-root-folder-opened:before { content: '\eb45'; }
+.codicon-root-folder:before { content: '\eb46'; }
+.codicon-rss:before { content: '\eb47'; }
+.codicon-ruby:before { content: '\eb48'; }
+.codicon-save-all:before { content: '\eb49'; }
+.codicon-save-as:before { content: '\eb4a'; }
+.codicon-save:before { content: '\eb4b'; }
+.codicon-screen-full:before { content: '\eb4c'; }
+.codicon-screen-normal:before { content: '\eb4d'; }
+.codicon-search-stop:before { content: '\eb4e'; }
+.codicon-server:before { content: '\eb50'; }
+.codicon-settings-gear:before { content: '\eb51'; }
+.codicon-settings:before { content: '\eb52'; }
+.codicon-shield:before { content: '\eb53'; }
+.codicon-smiley:before { content: '\eb54'; }
+.codicon-sort-precedence:before { content: '\eb55'; }
+.codicon-split-horizontal:before { content: '\eb56'; }
+.codicon-split-vertical:before { content: '\eb57'; }
+.codicon-squirrel:before { content: '\eb58'; }
+.codicon-star-full:before { content: '\eb59'; }
+.codicon-star-half:before { content: '\eb5a'; }
+.codicon-symbol-class:before { content: '\eb5b'; }
+.codicon-symbol-color:before { content: '\eb5c'; }
+.codicon-symbol-customcolor:before { content: '\eb5c'; }
+.codicon-symbol-constant:before { content: '\eb5d'; }
+.codicon-symbol-enum-member:before { content: '\eb5e'; }
+.codicon-symbol-field:before { content: '\eb5f'; }
+.codicon-symbol-file:before { content: '\eb60'; }
+.codicon-symbol-interface:before { content: '\eb61'; }
+.codicon-symbol-keyword:before { content: '\eb62'; }
+.codicon-symbol-misc:before { content: '\eb63'; }
+.codicon-symbol-operator:before { content: '\eb64'; }
+.codicon-symbol-property:before { content: '\eb65'; }
+.codicon-wrench:before { content: '\eb65'; }
+.codicon-wrench-subaction:before { content: '\eb65'; }
+.codicon-symbol-snippet:before { content: '\eb66'; }
+.codicon-tasklist:before { content: '\eb67'; }
+.codicon-telescope:before { content: '\eb68'; }
+.codicon-text-size:before { content: '\eb69'; }
+.codicon-three-bars:before { content: '\eb6a'; }
+.codicon-thumbsdown:before { content: '\eb6b'; }
+.codicon-thumbsup:before { content: '\eb6c'; }
+.codicon-tools:before { content: '\eb6d'; }
+.codicon-triangle-down:before { content: '\eb6e'; }
+.codicon-triangle-left:before { content: '\eb6f'; }
+.codicon-triangle-right:before { content: '\eb70'; }
+.codicon-triangle-up:before { content: '\eb71'; }
+.codicon-twitter:before { content: '\eb72'; }
+.codicon-unfold:before { content: '\eb73'; }
+.codicon-unlock:before { content: '\eb74'; }
+.codicon-unmute:before { content: '\eb75'; }
+.codicon-unverified:before { content: '\eb76'; }
+.codicon-verified:before { content: '\eb77'; }
+.codicon-versions:before { content: '\eb78'; }
+.codicon-vm-active:before { content: '\eb79'; }
+.codicon-vm-outline:before { content: '\eb7a'; }
+.codicon-vm-running:before { content: '\eb7b'; }
+.codicon-watch:before { content: '\eb7c'; }
+.codicon-whitespace:before { content: '\eb7d'; }
+.codicon-whole-word:before { content: '\eb7e'; }
+.codicon-window:before { content: '\eb7f'; }
+.codicon-word-wrap:before { content: '\eb80'; }
+.codicon-zoom-in:before { content: '\eb81'; }
+.codicon-zoom-out:before { content: '\eb82'; }
+.codicon-list-filter:before { content: '\eb83'; }
+.codicon-list-flat:before { content: '\eb84'; }
+.codicon-list-selection:before { content: '\eb85'; }
+.codicon-selection:before { content: '\eb85'; }
+.codicon-list-tree:before { content: '\eb86'; }
+.codicon-debug-breakpoint-function-unverified:before { content: '\eb87'; }
+.codicon-debug-breakpoint-function:before { content: '\eb88'; }
+.codicon-debug-breakpoint-function-disabled:before { content: '\eb88'; }
+.codicon-debug-stackframe-active:before { content: '\eb89'; }
+.codicon-circle-small-filled:before { content: '\eb8a'; }
+.codicon-debug-stackframe-dot:before { content: '\eb8a'; }
+.codicon-debug-stackframe:before { content: '\eb8b'; }
+.codicon-debug-stackframe-focused:before { content: '\eb8b'; }
+.codicon-debug-breakpoint-unsupported:before { content: '\eb8c'; }
+.codicon-symbol-string:before { content: '\eb8d'; }
+.codicon-debug-reverse-continue:before { content: '\eb8e'; }
+.codicon-debug-step-back:before { content: '\eb8f'; }
+.codicon-debug-restart-frame:before { content: '\eb90'; }
+.codicon-call-incoming:before { content: '\eb92'; }
+.codicon-call-outgoing:before { content: '\eb93'; }
+.codicon-menu:before { content: '\eb94'; }
+.codicon-expand-all:before { content: '\eb95'; }
+.codicon-feedback:before { content: '\eb96'; }
+.codicon-git-pull-request-reviewer:before { content: '\eb96'; }
+.codicon-group-by-ref-type:before { content: '\eb97'; }
+.codicon-ungroup-by-ref-type:before { content: '\eb98'; }
+.codicon-account:before { content: '\eb99'; }
+.codicon-git-pull-request-assignee:before { content: '\eb99'; }
+.codicon-bell-dot:before { content: '\eb9a'; }
+.codicon-debug-console:before { content: '\eb9b'; }
+.codicon-library:before { content: '\eb9c'; }
+.codicon-output:before { content: '\eb9d'; }
+.codicon-run-all:before { content: '\eb9e'; }
+.codicon-sync-ignored:before { content: '\eb9f'; }
+.codicon-pinned:before { content: '\eba0'; }
+.codicon-github-inverted:before { content: '\eba1'; }
+.codicon-debug-alt:before { content: '\eb91'; }
+.codicon-server-process:before { content: '\eba2'; }
+.codicon-server-environment:before { content: '\eba3'; }
+.codicon-pass:before { content: '\eba4'; }
+.codicon-stop-circle:before { content: '\eba5'; }
+.codicon-play-circle:before { content: '\eba6'; }
+.codicon-record:before { content: '\eba7'; }
+.codicon-debug-alt-small:before { content: '\eba8'; }
+.codicon-vm-connect:before { content: '\eba9'; }
+.codicon-cloud:before { content: '\ebaa'; }
+.codicon-merge:before { content: '\ebab'; }
+.codicon-export:before { content: '\ebac'; }
+.codicon-graph-left:before { content: '\ebad'; }
+.codicon-magnet:before { content: '\ebae'; }
+.codicon-notebook:before { content: '\ebaf'; }
+.codicon-redo:before { content: '\ebb0'; }
+.codicon-check-all:before { content: '\ebb1'; }
+.codicon-pinned-dirty:before { content: '\ebb2'; }
+.codicon-pass-filled:before { content: '\ebb3'; }
+.codicon-circle-large-filled:before { content: '\ebb4'; }
+.codicon-circle-large:before { content: '\ebb5'; }
+.codicon-circle-large-outline:before { content: '\ebb5'; }
+.codicon-combine:before { content: '\ebb6'; }
+.codicon-gather:before { content: '\ebb6'; }
+.codicon-table:before { content: '\ebb7'; }
+.codicon-variable-group:before { content: '\ebb8'; }
+.codicon-type-hierarchy:before { content: '\ebb9'; }
+.codicon-type-hierarchy-sub:before { content: '\ebba'; }
+.codicon-type-hierarchy-super:before { content: '\ebbb'; }
+.codicon-git-pull-request-create:before { content: '\ebbc'; }
+.codicon-run-above:before { content: '\ebbd'; }
+.codicon-run-below:before { content: '\ebbe'; }
+.codicon-notebook-template:before { content: '\ebbf'; }
+.codicon-debug-rerun:before { content: '\ebc0'; }
+.codicon-workspace-trusted:before { content: '\ebc1'; }
+.codicon-workspace-untrusted:before { content: '\ebc2'; }
+.codicon-workspace-unspecified:before { content: '\ebc3'; }
+.codicon-terminal-cmd:before { content: '\ebc4'; }
+.codicon-terminal-debian:before { content: '\ebc5'; }
+.codicon-terminal-linux:before { content: '\ebc6'; }
+.codicon-terminal-powershell:before { content: '\ebc7'; }
+.codicon-terminal-tmux:before { content: '\ebc8'; }
+.codicon-terminal-ubuntu:before { content: '\ebc9'; }
+.codicon-terminal-bash:before { content: '\ebca'; }
+.codicon-arrow-swap:before { content: '\ebcb'; }
+.codicon-copy:before { content: '\ebcc'; }
+.codicon-person-add:before { content: '\ebcd'; }
+.codicon-filter-filled:before { content: '\ebce'; }
+.codicon-wand:before { content: '\ebcf'; }
+.codicon-debug-line-by-line:before { content: '\ebd0'; }
+.codicon-inspect:before { content: '\ebd1'; }
+.codicon-layers:before { content: '\ebd2'; }
+.codicon-layers-dot:before { content: '\ebd3'; }
+.codicon-layers-active:before { content: '\ebd4'; }
+.codicon-compass:before { content: '\ebd5'; }
+.codicon-compass-dot:before { content: '\ebd6'; }
+.codicon-compass-active:before { content: '\ebd7'; }
+.codicon-azure:before { content: '\ebd8'; }
+.codicon-issue-draft:before { content: '\ebd9'; }
+.codicon-git-pull-request-closed:before { content: '\ebda'; }
+.codicon-git-pull-request-draft:before { content: '\ebdb'; }
+.codicon-debug-all:before { content: '\ebdc'; }
+.codicon-debug-coverage:before { content: '\ebdd'; }
+.codicon-run-errors:before { content: '\ebde'; }
+.codicon-folder-library:before { content: '\ebdf'; }
+.codicon-debug-continue-small:before { content: '\ebe0'; }
+.codicon-beaker-stop:before { content: '\ebe1'; }
+.codicon-graph-line:before { content: '\ebe2'; }
+.codicon-graph-scatter:before { content: '\ebe3'; }
+.codicon-pie-chart:before { content: '\ebe4'; }
+.codicon-bracket-dot:before { content: '\ebe5'; }
+.codicon-bracket-error:before { content: '\ebe6'; }
+.codicon-lock-small:before { content: '\ebe7'; }
+.codicon-azure-devops:before { content: '\ebe8'; }
+.codicon-verified-filled:before { content: '\ebe9'; }
+.codicon-newline:before { content: '\ebea'; }
+.codicon-layout:before { content: '\ebeb'; }
+.codicon-layout-activitybar-left:before { content: '\ebec'; }
+.codicon-layout-activitybar-right:before { content: '\ebed'; }
+.codicon-layout-panel-left:before { content: '\ebee'; }
+.codicon-layout-panel-center:before { content: '\ebef'; }
+.codicon-layout-panel-justify:before { content: '\ebf0'; }
+.codicon-layout-panel-right:before { content: '\ebf1'; }
+.codicon-layout-panel:before { content: '\ebf2'; }
+.codicon-layout-sidebar-left:before { content: '\ebf3'; }
+.codicon-layout-sidebar-right:before { content: '\ebf4'; }
+.codicon-layout-statusbar:before { content: '\ebf5'; }
+.codicon-layout-menubar:before { content: '\ebf6'; }
+.codicon-layout-centered:before { content: '\ebf7'; }
+.codicon-layout-sidebar-right-off:before { content: '\ec00'; }
+.codicon-layout-panel-off:before { content: '\ec01'; }
+.codicon-layout-sidebar-left-off:before { content: '\ec02'; }
+.codicon-target:before { content: '\ebf8'; }
+.codicon-indent:before { content: '\ebf9'; }
+.codicon-record-small:before { content: '\ebfa'; }
+.codicon-error-small:before { content: '\ebfb'; }
+.codicon-arrow-circle-down:before { content: '\ebfc'; }
+.codicon-arrow-circle-left:before { content: '\ebfd'; }
+.codicon-arrow-circle-right:before { content: '\ebfe'; }
+.codicon-arrow-circle-up:before { content: '\ebff'; }
+.codicon-heart-filled:before { content: '\ec04'; }
+.codicon-map:before { content: '\ec05'; }
+.codicon-map-filled:before { content: '\ec06'; }
+.codicon-circle-small:before { content: '\ec07'; }
+.codicon-bell-slash:before { content: '\ec08'; }
+.codicon-bell-slash-dot:before { content: '\ec09'; }
+.codicon-comment-unresolved:before { content: '\ec0a'; }
+.codicon-git-pull-request-go-to-changes:before { content: '\ec0b'; }
+.codicon-git-pull-request-new-changes:before { content: '\ec0c'; }
+.codicon-search-fuzzy:before { content: '\ec0d'; }
+.codicon-comment-draft:before { content: '\ec0e'; }
+.codicon-send:before { content: '\ec0f'; }
+.codicon-sparkle:before { content: '\ec10'; }
+.codicon-insert:before { content: '\ec11'; }
+.codicon-mic:before { content: '\ec12'; }
+.codicon-thumbsdown-filled:before { content: '\ec13'; }
+.codicon-thumbsup-filled:before { content: '\ec14'; }
+.codicon-coffee:before { content: '\ec15'; }
+.codicon-snake:before { content: '\ec16'; }
+.codicon-game:before { content: '\ec17'; }
+.codicon-vr:before { content: '\ec18'; }
+.codicon-chip:before { content: '\ec19'; }
+.codicon-piano:before { content: '\ec1a'; }
+.codicon-music:before { content: '\ec1b'; }
+.codicon-mic-filled:before { content: '\ec1c'; }
+.codicon-git-fetch:before { content: '\ec1d'; }
+.codicon-copilot:before { content: '\ec1e'; }
+.codicon-lightbulb-sparkle:before { content: '\ec1f'; }
+.codicon-lightbulb-sparkle-autofix:before { content: '\ec1f'; }
+.codicon-robot:before { content: '\ec20'; }
+.codicon-sparkle-filled:before { content: '\ec21'; }
+.codicon-diff-single:before { content: '\ec22'; }
+.codicon-diff-multiple:before { content: '\ec23'; }
+.codicon-dialog-error:before { content: '\ea87'; }
+.codicon-dialog-warning:before { content: '\ea6c'; }
+.codicon-dialog-info:before { content: '\ea74'; }
+.codicon-dialog-close:before { content: '\ea76'; }
+.codicon-tree-item-expanded:before { content: '\eab4'; }
+.codicon-tree-filter-on-type-on:before { content: '\eb83'; }
+.codicon-tree-filter-on-type-off:before { content: '\eb85'; }
+.codicon-tree-filter-clear:before { content: '\ea76'; }
+.codicon-tree-item-loading:before { content: '\eb19'; }
+.codicon-menu-selection:before { content: '\eab2'; }
+.codicon-menu-submenu:before { content: '\eab6'; }
+.codicon-menubar-more:before { content: '\ea7c'; }
+.codicon-scrollbar-button-left:before { content: '\eb6f'; }
+.codicon-scrollbar-button-right:before { content: '\eb70'; }
+.codicon-scrollbar-button-up:before { content: '\eb71'; }
+.codicon-scrollbar-button-down:before { content: '\eb6e'; }
+.codicon-toolbar-more:before { content: '\ea7c'; }
+.codicon-quick-input-back:before { content: '\ea9b'; }
+.codicon-widget-close:before { content: '\ea76'; }
+.codicon-goto-previous-location:before { content: '\eaa1'; }
+.codicon-goto-next-location:before { content: '\ea9a'; }
+.codicon-diff-review-insert:before { content: '\ea60'; }
+.codicon-diff-review-remove:before { content: '\eb3b'; }
+.codicon-diff-review-close:before { content: '\ea76'; }
+.codicon-diff-insert:before { content: '\ea60'; }
+.codicon-diff-remove:before { content: '\eb3b'; }
+.codicon-marker-navigation-next:before { content: '\ea9a'; }
+.codicon-marker-navigation-previous:before { content: '\eaa1'; }
+.codicon-inline-suggestion-hints-next:before { content: '\eab6'; }
+.codicon-inline-suggestion-hints-previous:before { content: '\eab5'; }
+.codicon-find-selection:before { content: '\eb85'; }
+.codicon-find-collapsed:before { content: '\eab6'; }
+.codicon-find-expanded:before { content: '\eab4'; }
+.codicon-find-replace:before { content: '\eb3d'; }
+.codicon-find-replace-all:before { content: '\eb3c'; }
+.codicon-find-previous-match:before { content: '\eaa1'; }
+.codicon-find-next-match:before { content: '\ea9a'; }
+.codicon-folding-expanded:before { content: '\eab4'; }
+.codicon-folding-collapsed:before { content: '\eab6'; }
+.codicon-folding-manual-collapsed:before { content: '\eab6'; }
+.codicon-folding-manual-expanded:before { content: '\eab4'; }
+.codicon-suggest-more-info:before { content: '\eab6'; }
+.codicon-parameter-hints-next:before { content: '\eab4'; }
+.codicon-parameter-hints-previous:before { content: '\eab7'; }
+.codicon-extensions-warning-message:before { content: '\ea6c'; }
+.monaco-editor .inputarea.ime-input { background-color: #1e1e1e; }
+.monaco-editor .line-numbers.dimmed-line-number { color: rgba(133, 133, 133, 0.4); }
+.monaco-editor .view-overlays .current-line { border: 2px solid #282828; }
+.monaco-editor .margin-view-overlays .current-line-margin { border: 2px solid #282828; }
+.monaco-editor .bracket-indent-guide.lvl-0 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-1 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-2 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-3 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-4 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-5 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-6 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-7 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-8 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-9 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-10 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-11 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-12 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-13 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-14 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-15 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-16 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-17 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-18 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-19 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-20 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-21 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-22 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-23 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-24 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-25 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-26 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-27 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-28 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-29 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .vertical { box-shadow: 1px 0 0 0 var(--guide-color) inset; }
+.monaco-editor .horizontal-top { border-top: 1px solid var(--guide-color); }
+.monaco-editor .horizontal-bottom { border-bottom: 1px solid var(--guide-color); }
+.monaco-editor .vertical.indent-active { box-shadow: 1px 0 0 0 var(--guide-color-active) inset; }
+.monaco-editor .horizontal-top.indent-active { border-top: 1px solid var(--guide-color-active); }
+.monaco-editor .horizontal-bottom.indent-active { border-bottom: 1px solid var(--guide-color-active); }
+.monaco-editor .lines-content .core-guide-indent.lvl-0 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-1 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-2 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-3 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-4 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-5 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-6 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-7 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-8 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-9 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-10 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-11 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-12 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-13 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-14 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-15 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-16 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-17 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-18 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-19 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-20 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-21 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-22 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-23 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-24 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-25 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-26 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-27 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-28 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent.lvl-29 { --indent-color: #404040; --indent-color-active: #707070; }
+.monaco-editor .lines-content .core-guide-indent { box-shadow: 1px 0 0 0 var(--indent-color) inset; }
+.monaco-editor .lines-content .core-guide-indent.indent-active { box-shadow: 1px 0 0 0 var(--indent-color-active) inset; }
+.monaco-editor .cursors-layer .cursor { background-color: #aeafad; border-color: #aeafad; color: #515052; }
+.monaco-editor .unexpected-closing-bracket { color: rgba(255, 18, 18, 0.8); }
+.monaco-editor .bracket-highlighting-0 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-1 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-2 { color: #179fff; }
+.monaco-editor .bracket-highlighting-3 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-4 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-5 { color: #179fff; }
+.monaco-editor .bracket-highlighting-6 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-7 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-8 { color: #179fff; }
+.monaco-editor .bracket-highlighting-9 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-10 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-11 { color: #179fff; }
+.monaco-editor .bracket-highlighting-12 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-13 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-14 { color: #179fff; }
+.monaco-editor .bracket-highlighting-15 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-16 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-17 { color: #179fff; }
+.monaco-editor .bracket-highlighting-18 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-19 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-20 { color: #179fff; }
+.monaco-editor .bracket-highlighting-21 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-22 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-23 { color: #179fff; }
+.monaco-editor .bracket-highlighting-24 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-25 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-26 { color: #179fff; }
+.monaco-editor .bracket-highlighting-27 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-28 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-29 { color: #179fff; }
+.monaco-editor .squiggly-error { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23f14c4c'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-warning { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23cca700'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-info { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%233794ff'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-hint { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%223%22%20width%3D%2212%22%3E%3Cg%20fill%3D%22rgba(238%2C%20238%2C%20238%2C%200.7)%22%3E%3Ccircle%20cx%3D%221%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%229%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat bottom left; }
+.monaco-editor.showUnused .squiggly-inline-unnecessary { opacity: 0.667; }
+.monaco-editor .quickfix-edit-highlight { background-color: rgba(234, 92, 0, 0.33); }
+.monaco-editor .monaco-hover .hover-row:not(:first-child):not(:empty) { border-top: 1px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .monaco-hover hr { border-top: 1px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .monaco-hover hr { border-bottom: 0px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .findMatch { background-color: rgba(234, 92, 0, 0.33); }
+.monaco-editor .currentFindMatch { background-color: #515c6a; }
+.monaco-editor .findScope { background-color: rgba(58, 61, 65, 0.4); }
+.monaco-editor .find-widget { background-color: #252526; }
+.monaco-editor .find-widget { box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.36); }
+.monaco-editor .find-widget { color: #cccccc; }
+.monaco-editor .find-widget.no-results .matchesCount { color: #f48771; }
+.monaco-editor .find-widget .monaco-sash { background-color: #454545; }
+
+		.monaco-editor .find-widget .button:not(.disabled):hover,
+		.monaco-editor .find-widget .codicon-find-selection:hover {
+			background-color: rgba(90, 93, 94, 0.31) !important;
+		}
+	
+.monaco-editor .find-widget .monaco-inputbox.synthetic-focus { outline-color: #007fd4; }
+.monaco-editor .selectionHighlight { background-color: rgba(173, 214, 255, 0.07); }
+.monaco-editor, .monaco-diff-editor, .monaco-component { --vscode-foreground: #cccccc;
+--vscode-disabledForeground: rgba(204, 204, 204, 0.5);
+--vscode-errorForeground: #f48771;
+--vscode-descriptionForeground: rgba(204, 204, 204, 0.7);
+--vscode-icon-foreground: #c5c5c5;
+--vscode-focusBorder: #007fd4;
+--vscode-textSeparator-foreground: rgba(255, 255, 255, 0.18);
+--vscode-textLink-foreground: #3794ff;
+--vscode-textLink-activeForeground: #3794ff;
+--vscode-textPreformat-foreground: #d7ba7d;
+--vscode-textPreformat-background: rgba(255, 255, 255, 0.1);
+--vscode-textBlockQuote-background: #222222;
+--vscode-textBlockQuote-border: rgba(0, 122, 204, 0.5);
+--vscode-textCodeBlock-background: rgba(10, 10, 10, 0.4);
+--vscode-widget-shadow: rgba(0, 0, 0, 0.36);
+--vscode-input-background: #3c3c3c;
+--vscode-input-foreground: #cccccc;
+--vscode-inputOption-activeBorder: #007acc;
+--vscode-inputOption-hoverBackground: rgba(90, 93, 94, 0.5);
+--vscode-inputOption-activeBackground: rgba(0, 127, 212, 0.4);
+--vscode-inputOption-activeForeground: #ffffff;
+--vscode-input-placeholderForeground: rgba(204, 204, 204, 0.5);
+--vscode-inputValidation-infoBackground: #063b49;
+--vscode-inputValidation-infoBorder: #007acc;
+--vscode-inputValidation-warningBackground: #352a05;
+--vscode-inputValidation-warningBorder: #b89500;
+--vscode-inputValidation-errorBackground: #5a1d1d;
+--vscode-inputValidation-errorBorder: #be1100;
+--vscode-dropdown-background: #3c3c3c;
+--vscode-dropdown-foreground: #f0f0f0;
+--vscode-dropdown-border: #3c3c3c;
+--vscode-button-foreground: #ffffff;
+--vscode-button-separator: rgba(255, 255, 255, 0.4);
+--vscode-button-background: #0e639c;
+--vscode-button-hoverBackground: #1177bb;
+--vscode-button-secondaryForeground: #ffffff;
+--vscode-button-secondaryBackground: #3a3d41;
+--vscode-button-secondaryHoverBackground: #45494e;
+--vscode-badge-background: #4d4d4d;
+--vscode-badge-foreground: #ffffff;
+--vscode-scrollbar-shadow: #000000;
+--vscode-scrollbarSlider-background: rgba(121, 121, 121, 0.4);
+--vscode-scrollbarSlider-hoverBackground: rgba(100, 100, 100, 0.7);
+--vscode-scrollbarSlider-activeBackground: rgba(191, 191, 191, 0.4);
+--vscode-progressBar-background: #0e70c0;
+--vscode-editorError-foreground: #f14c4c;
+--vscode-editorWarning-foreground: #cca700;
+--vscode-editorInfo-foreground: #3794ff;
+--vscode-editorHint-foreground: rgba(238, 238, 238, 0.7);
+--vscode-sash-hoverBorder: #007fd4;
+--vscode-editor-background: #1e1e1e;
+--vscode-editor-foreground: #d4d4d4;
+--vscode-editorStickyScroll-background: #1e1e1e;
+--vscode-editorStickyScrollHover-background: #2a2d2e;
+--vscode-editorWidget-background: #252526;
+--vscode-editorWidget-foreground: #cccccc;
+--vscode-editorWidget-border: #454545;
+--vscode-quickInput-background: #252526;
+--vscode-quickInput-foreground: #cccccc;
+--vscode-quickInputTitle-background: rgba(255, 255, 255, 0.1);
+--vscode-pickerGroup-foreground: #3794ff;
+--vscode-pickerGroup-border: #3f3f46;
+--vscode-keybindingLabel-background: rgba(128, 128, 128, 0.17);
+--vscode-keybindingLabel-foreground: #cccccc;
+--vscode-keybindingLabel-border: rgba(51, 51, 51, 0.6);
+--vscode-keybindingLabel-bottomBorder: rgba(68, 68, 68, 0.6);
+--vscode-editor-selectionBackground: #264f78;
+--vscode-editor-inactiveSelectionBackground: #3a3d41;
+--vscode-editor-selectionHighlightBackground: rgba(173, 214, 255, 0.15);
+--vscode-editor-findMatchBackground: #515c6a;
+--vscode-editor-findMatchHighlightBackground: rgba(234, 92, 0, 0.33);
+--vscode-editor-findRangeHighlightBackground: rgba(58, 61, 65, 0.4);
+--vscode-searchEditor-findMatchBackground: rgba(234, 92, 0, 0.22);
+--vscode-search-resultsInfoForeground: rgba(204, 204, 204, 0.65);
+--vscode-editor-hoverHighlightBackground: rgba(38, 79, 120, 0.25);
+--vscode-editorHoverWidget-background: #252526;
+--vscode-editorHoverWidget-foreground: #cccccc;
+--vscode-editorHoverWidget-border: #454545;
+--vscode-editorHoverWidget-statusBarBackground: #2c2c2d;
+--vscode-editorLink-activeForeground: #4e94ce;
+--vscode-editorInlayHint-foreground: #969696;
+--vscode-editorInlayHint-background: rgba(77, 77, 77, 0.1);
+--vscode-editorInlayHint-typeForeground: #969696;
+--vscode-editorInlayHint-typeBackground: rgba(77, 77, 77, 0.1);
+--vscode-editorInlayHint-parameterForeground: #969696;
+--vscode-editorInlayHint-parameterBackground: rgba(77, 77, 77, 0.1);
+--vscode-editorLightBulb-foreground: #ffcc00;
+--vscode-editorLightBulbAutoFix-foreground: #75beff;
+--vscode-editorLightBulbAi-foreground: #767676;
+--vscode-diffEditor-insertedTextBackground: rgba(156, 204, 44, 0.2);
+--vscode-diffEditor-removedTextBackground: rgba(255, 0, 0, 0.2);
+--vscode-diffEditor-insertedLineBackground: rgba(155, 185, 85, 0.2);
+--vscode-diffEditor-removedLineBackground: rgba(255, 0, 0, 0.2);
+--vscode-diffEditor-diagonalFill: rgba(204, 204, 204, 0.2);
+--vscode-diffEditor-unchangedRegionForeground: #cccccc;
+--vscode-diffEditor-unchangedCodeBackground: rgba(116, 116, 116, 0.16);
+--vscode-list-focusOutline: #007fd4;
+--vscode-list-activeSelectionBackground: #04395e;
+--vscode-list-activeSelectionForeground: #ffffff;
+--vscode-list-inactiveSelectionBackground: #37373d;
+--vscode-list-hoverBackground: #2a2d2e;
+--vscode-list-dropBackground: #062f4a;
+--vscode-list-highlightForeground: #2aaaff;
+--vscode-list-focusHighlightForeground: #2aaaff;
+--vscode-list-invalidItemForeground: #b89500;
+--vscode-list-errorForeground: #f88070;
+--vscode-list-warningForeground: #cca700;
+--vscode-listFilterWidget-background: #252526;
+--vscode-listFilterWidget-outline: rgba(0, 0, 0, 0);
+--vscode-listFilterWidget-noMatchesOutline: #be1100;
+--vscode-listFilterWidget-shadow: rgba(0, 0, 0, 0.36);
+--vscode-list-filterMatchBackground: rgba(234, 92, 0, 0.33);
+--vscode-tree-indentGuidesStroke: #585858;
+--vscode-tree-inactiveIndentGuidesStroke: rgba(88, 88, 88, 0.4);
+--vscode-tree-tableColumnsBorder: rgba(204, 204, 204, 0.13);
+--vscode-tree-tableOddRowsBackground: rgba(204, 204, 204, 0.04);
+--vscode-list-deemphasizedForeground: #8c8c8c;
+--vscode-checkbox-background: #3c3c3c;
+--vscode-checkbox-selectBackground: #252526;
+--vscode-checkbox-foreground: #f0f0f0;
+--vscode-checkbox-border: #3c3c3c;
+--vscode-checkbox-selectBorder: #c5c5c5;
+--vscode-quickInputList-focusForeground: #ffffff;
+--vscode-quickInputList-focusBackground: #04395e;
+--vscode-menu-foreground: #f0f0f0;
+--vscode-menu-background: #3c3c3c;
+--vscode-menu-selectionForeground: #ffffff;
+--vscode-menu-selectionBackground: #04395e;
+--vscode-menu-separatorBackground: #606060;
+--vscode-toolbar-hoverBackground: rgba(90, 93, 94, 0.31);
+--vscode-toolbar-activeBackground: rgba(99, 102, 103, 0.31);
+--vscode-editor-snippetTabstopHighlightBackground: rgba(124, 124, 124, 0.3);
+--vscode-editor-snippetFinalTabstopHighlightBorder: #525252;
+--vscode-breadcrumb-foreground: rgba(204, 204, 204, 0.8);
+--vscode-breadcrumb-background: #1e1e1e;
+--vscode-breadcrumb-focusForeground: #e0e0e0;
+--vscode-breadcrumb-activeSelectionForeground: #e0e0e0;
+--vscode-breadcrumbPicker-background: #252526;
+--vscode-merge-currentHeaderBackground: rgba(64, 200, 174, 0.5);
+--vscode-merge-currentContentBackground: rgba(64, 200, 174, 0.2);
+--vscode-merge-incomingHeaderBackground: rgba(64, 166, 255, 0.5);
+--vscode-merge-incomingContentBackground: rgba(64, 166, 255, 0.2);
+--vscode-merge-commonHeaderBackground: rgba(96, 96, 96, 0.4);
+--vscode-merge-commonContentBackground: rgba(96, 96, 96, 0.16);
+--vscode-editorOverviewRuler-currentContentForeground: rgba(64, 200, 174, 0.5);
+--vscode-editorOverviewRuler-incomingContentForeground: rgba(64, 166, 255, 0.5);
+--vscode-editorOverviewRuler-commonContentForeground: rgba(96, 96, 96, 0.4);
+--vscode-editorOverviewRuler-findMatchForeground: rgba(209, 134, 22, 0.49);
+--vscode-editorOverviewRuler-selectionHighlightForeground: rgba(160, 160, 160, 0.8);
+--vscode-minimap-findMatchHighlight: #d18616;
+--vscode-minimap-selectionOccurrenceHighlight: #676767;
+--vscode-minimap-selectionHighlight: #264f78;
+--vscode-minimap-infoHighlight: #3794ff;
+--vscode-minimap-warningHighlight: #cca700;
+--vscode-minimap-errorHighlight: rgba(255, 18, 18, 0.7);
+--vscode-minimap-foregroundOpacity: #000000;
+--vscode-minimapSlider-background: rgba(121, 121, 121, 0.2);
+--vscode-minimapSlider-hoverBackground: rgba(100, 100, 100, 0.35);
+--vscode-minimapSlider-activeBackground: rgba(191, 191, 191, 0.2);
+--vscode-problemsErrorIcon-foreground: #f14c4c;
+--vscode-problemsWarningIcon-foreground: #cca700;
+--vscode-problemsInfoIcon-foreground: #3794ff;
+--vscode-charts-foreground: #cccccc;
+--vscode-charts-lines: rgba(204, 204, 204, 0.5);
+--vscode-charts-red: #f14c4c;
+--vscode-charts-blue: #3794ff;
+--vscode-charts-yellow: #cca700;
+--vscode-charts-orange: #d18616;
+--vscode-charts-green: #89d185;
+--vscode-charts-purple: #b180d7;
+--vscode-editor-lineHighlightBorder: #282828;
+--vscode-editor-rangeHighlightBackground: rgba(255, 255, 255, 0.04);
+--vscode-editor-symbolHighlightBackground: rgba(234, 92, 0, 0.33);
+--vscode-editorCursor-foreground: #aeafad;
+--vscode-editorWhitespace-foreground: rgba(227, 228, 226, 0.16);
+--vscode-editorLineNumber-foreground: #858585;
+--vscode-editorIndentGuide-background: rgba(227, 228, 226, 0.16);
+--vscode-editorIndentGuide-activeBackground: rgba(227, 228, 226, 0.16);
+--vscode-editorIndentGuide-background1: #404040;
+--vscode-editorIndentGuide-background2: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background3: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background4: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background5: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-background6: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground1: #707070;
+--vscode-editorIndentGuide-activeBackground2: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground3: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground4: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground5: rgba(0, 0, 0, 0);
+--vscode-editorIndentGuide-activeBackground6: rgba(0, 0, 0, 0);
+--vscode-editorActiveLineNumber-foreground: #c6c6c6;
+--vscode-editorLineNumber-activeForeground: #c6c6c6;
+--vscode-editorRuler-foreground: #5a5a5a;
+--vscode-editorCodeLens-foreground: #999999;
+--vscode-editorBracketMatch-background: rgba(0, 100, 0, 0.1);
+--vscode-editorBracketMatch-border: #888888;
+--vscode-editorOverviewRuler-border: rgba(127, 127, 127, 0.3);
+--vscode-editorGutter-background: #1e1e1e;
+--vscode-editorUnnecessaryCode-opacity: rgba(0, 0, 0, 0.67);
+--vscode-editorGhostText-foreground: rgba(255, 255, 255, 0.34);
+--vscode-editorOverviewRuler-rangeHighlightForeground: rgba(0, 122, 204, 0.6);
+--vscode-editorOverviewRuler-errorForeground: rgba(255, 18, 18, 0.7);
+--vscode-editorOverviewRuler-warningForeground: #cca700;
+--vscode-editorOverviewRuler-infoForeground: #3794ff;
+--vscode-editorBracketHighlight-foreground1: #ffd700;
+--vscode-editorBracketHighlight-foreground2: #da70d6;
+--vscode-editorBracketHighlight-foreground3: #179fff;
+--vscode-editorBracketHighlight-foreground4: rgba(0, 0, 0, 0);
+--vscode-editorBracketHighlight-foreground5: rgba(0, 0, 0, 0);
+--vscode-editorBracketHighlight-foreground6: rgba(0, 0, 0, 0);
+--vscode-editorBracketHighlight-unexpectedBracket-foreground: rgba(255, 18, 18, 0.8);
+--vscode-editorBracketPairGuide-background1: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background2: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background3: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background4: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background5: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background6: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground1: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground2: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground3: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground4: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground5: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground6: rgba(0, 0, 0, 0);
+--vscode-editorUnicodeHighlight-border: #bd9b03;
+--vscode-editorUnicodeHighlight-background: rgba(189, 155, 3, 0.15);
+--vscode-diffEditor-move-border: rgba(139, 139, 139, 0.61);
+--vscode-diffEditor-moveActive-border: #ffa500;
+--vscode-diffEditor-unchangedRegionShadow: #000000;
+--vscode-multiDiffEditor-headerBackground: #808080;
+--vscode-editorOverviewRuler-bracketMatchForeground: #a0a0a0;
+--vscode-symbolIcon-arrayForeground: #cccccc;
+--vscode-symbolIcon-booleanForeground: #cccccc;
+--vscode-symbolIcon-classForeground: #ee9d28;
+--vscode-symbolIcon-colorForeground: #cccccc;
+--vscode-symbolIcon-constantForeground: #cccccc;
+--vscode-symbolIcon-constructorForeground: #b180d7;
+--vscode-symbolIcon-enumeratorForeground: #ee9d28;
+--vscode-symbolIcon-enumeratorMemberForeground: #75beff;
+--vscode-symbolIcon-eventForeground: #ee9d28;
+--vscode-symbolIcon-fieldForeground: #75beff;
+--vscode-symbolIcon-fileForeground: #cccccc;
+--vscode-symbolIcon-folderForeground: #cccccc;
+--vscode-symbolIcon-functionForeground: #b180d7;
+--vscode-symbolIcon-interfaceForeground: #75beff;
+--vscode-symbolIcon-keyForeground: #cccccc;
+--vscode-symbolIcon-keywordForeground: #cccccc;
+--vscode-symbolIcon-methodForeground: #b180d7;
+--vscode-symbolIcon-moduleForeground: #cccccc;
+--vscode-symbolIcon-namespaceForeground: #cccccc;
+--vscode-symbolIcon-nullForeground: #cccccc;
+--vscode-symbolIcon-numberForeground: #cccccc;
+--vscode-symbolIcon-objectForeground: #cccccc;
+--vscode-symbolIcon-operatorForeground: #cccccc;
+--vscode-symbolIcon-packageForeground: #cccccc;
+--vscode-symbolIcon-propertyForeground: #cccccc;
+--vscode-symbolIcon-referenceForeground: #cccccc;
+--vscode-symbolIcon-snippetForeground: #cccccc;
+--vscode-symbolIcon-stringForeground: #cccccc;
+--vscode-symbolIcon-structForeground: #cccccc;
+--vscode-symbolIcon-textForeground: #cccccc;
+--vscode-symbolIcon-typeParameterForeground: #cccccc;
+--vscode-symbolIcon-unitForeground: #cccccc;
+--vscode-symbolIcon-variableForeground: #75beff;
+--vscode-actionBar-toggledBackground: rgba(0, 127, 212, 0.4);
+--vscode-peekViewTitle-background: #252526;
+--vscode-peekViewTitleLabel-foreground: #ffffff;
+--vscode-peekViewTitleDescription-foreground: rgba(204, 204, 204, 0.7);
+--vscode-peekView-border: #3794ff;
+--vscode-peekViewResult-background: #252526;
+--vscode-peekViewResult-lineForeground: #bbbbbb;
+--vscode-peekViewResult-fileForeground: #ffffff;
+--vscode-peekViewResult-selectionBackground: rgba(51, 153, 255, 0.2);
+--vscode-peekViewResult-selectionForeground: #ffffff;
+--vscode-peekViewEditor-background: #001f33;
+--vscode-peekViewEditorGutter-background: #001f33;
+--vscode-peekViewEditorStickyScroll-background: #001f33;
+--vscode-peekViewResult-matchHighlightBackground: rgba(234, 92, 0, 0.3);
+--vscode-peekViewEditor-matchHighlightBackground: rgba(255, 143, 0, 0.6);
+--vscode-editorMarkerNavigationError-background: #f14c4c;
+--vscode-editorMarkerNavigationError-headerBackground: rgba(241, 76, 76, 0.1);
+--vscode-editorMarkerNavigationWarning-background: #cca700;
+--vscode-editorMarkerNavigationWarning-headerBackground: rgba(204, 167, 0, 0.1);
+--vscode-editorMarkerNavigationInfo-background: #3794ff;
+--vscode-editorMarkerNavigationInfo-headerBackground: rgba(55, 148, 255, 0.1);
+--vscode-editorMarkerNavigation-background: #1e1e1e;
+--vscode-editor-foldBackground: rgba(38, 79, 120, 0.3);
+--vscode-editorGutter-foldingControlForeground: #c5c5c5;
+--vscode-editorSuggestWidget-background: #252526;
+--vscode-editorSuggestWidget-border: #454545;
+--vscode-editorSuggestWidget-foreground: #d4d4d4;
+--vscode-editorSuggestWidget-selectedForeground: #ffffff;
+--vscode-editorSuggestWidget-selectedBackground: #04395e;
+--vscode-editorSuggestWidget-highlightForeground: #2aaaff;
+--vscode-editorSuggestWidget-focusHighlightForeground: #2aaaff;
+--vscode-editorSuggestWidgetStatus-foreground: rgba(212, 212, 212, 0.5);
+--vscode-editor-linkedEditingBackground: rgba(255, 0, 0, 0.3);
+--vscode-editor-wordHighlightBackground: rgba(87, 87, 87, 0.72);
+--vscode-editor-wordHighlightStrongBackground: rgba(0, 73, 114, 0.72);
+--vscode-editor-wordHighlightTextBackground: rgba(87, 87, 87, 0.72);
+--vscode-editorOverviewRuler-wordHighlightForeground: rgba(160, 160, 160, 0.8);
+--vscode-editorOverviewRuler-wordHighlightStrongForeground: rgba(192, 160, 192, 0.8);
+--vscode-editorOverviewRuler-wordHighlightTextForeground: rgba(160, 160, 160, 0.8);
+--vscode-editorHoverWidget-highlightForeground: #2aaaff; }
+
+.mtk1 { color: #d4d4d4; }
+.mtk2 { color: #1e1e1e; }
+.mtk3 { color: #cc6666; }
+.mtk4 { color: #9cdcfe; }
+.mtk5 { color: #ce9178; }
+.mtk6 { color: #b5cea8; }
+.mtk7 { color: #608b4e; }
+.mtk8 { color: #569cd6; }
+.mtk9 { color: #dcdcdc; }
+.mtk10 { color: #808080; }
+.mtk11 { color: #f44747; }
+.mtk12 { color: #c586c0; }
+.mtk13 { color: #a79873; }
+.mtk14 { color: #dd6a6f; }
+.mtk15 { color: #5bb498; }
+.mtk16 { color: #909090; }
+.mtk17 { color: #778899; }
+.mtk18 { color: #ff00ff; }
+.mtk19 { color: #b46695; }
+.mtk20 { color: #ff0000; }
+.mtk21 { color: #4f76ac; }
+.mtk22 { color: #008800; }
+.mtk23 { color: #3dc9b0; }
+.mtk24 { color: #9650c8; }
+.mtk25 { color: #74b0df; }
+.mtk26 { color: #4864aa; }
+.mtki { font-style: italic; }
+.mtkb { font-weight: bold; }
+.mtku { text-decoration: underline; text-underline-position: under; }
+.mtks { text-decoration: line-through; }
+.mtks.mtku { text-decoration: underline line-through; text-underline-position: under; }</style></head>
+  <body style="overflow: hidden;" class="enable-motion">
+    <div id="svelte"><main class="h-screen text-primary-content"><div class="flex h-full flex-col overflow-hidden"><div class="top-bar z-10 flex h-fit w-full items-center justify-center bg-gradient-to-r from-[#bd34fe] to-[#ff3670] p-1 text-center text-white"><div class="flex flex-grow" role="button" tabindex="0"><a href="https://www.mermaidchart.com/?utm_source=mermaid_live_editor&amp;utm_medium=announcement_bar_ai_diagramming&amp;utm_campaign=promo_2024" target="_blank" class="flex flex-grow justify-center gap-6 align-middle tracking-wide">Try diagramming with ChatGPT at Mermaid Chart <button class="rounded bg-gray-800 p-1 px-4 text-sm font-light">Try it now</button></a></div> <button title="Dismiss banner"><i class="fa fa-close px-2"></i></button></div> <div class="navbar bg-primary p-0 shadow-lg svelte-ep1962"><div class="mx-2 flex-1 px-2"><span class="text-lg font-bold"><a href="https://mermaid.live/">Mermaid<span class="text-xs font-thin">v10.8.0</span> Live Editor</a></span></div> <label for="menu-toggle" class="pointer-cursor fixed right-4 z-[1000] lg:hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fill-current" width="20" height="20" viewBox="0 0 20 20"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label> <label for="menu-toggle" class="hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fill-current" width="20" height="20" viewBox="0 0 20 20"><title>Cross</title><line x1="5" y1="5" x2="15" y2="15" stroke="white" stroke-width="2"></line><line x1="5" y1="15" x2="15" y2="5" stroke="white" stroke-width="2"></line></svg></label> <input class="hidden svelte-ep1962" type="checkbox" id="menu-toggle"> <div class="hidden w-full lg:flex lg:w-auto lg:items-center svelte-ep1962" id="menu"><div class="dropdown hidden lg:block"><div tabindex="0" class="btn btn-ghost"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-6 w-6 stroke-current md:mr-2"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg> <span class="hidden md:inline">Theme</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" class="ml-1 inline-block h-4 w-4 fill-current"><path d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"></path></svg></div> <div class="dropdown-content top-px mt-14 h-96 w-56 overflow-y-auto bg-base-200 text-base-content shadow-2xl"><ul tabindex="0" class="menu compact p-4"><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🌝 light</span> </li><li class="bordered"><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🌚 dark</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🧁 cupcake</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🐝 bumblebee</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">✳️ emerald</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🏢 corporate</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🌃 synthwave</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">👴 retro</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🤖 cyberpunk</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🌸 valentine</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🎃 halloween</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🌷 garden</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🌲 forest</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🐟 aqua</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">👓 lofi</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🖍 pastel</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🧚‍♀️ fantasy</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">📝 wireframe</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🏴 black</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">💎 luxury</span> </li><li><span role="menuitem" tabindex="0" class="btn btn-ghost justify-start">🧛‍♂️ dracula</span> </li></ul></div></div> <ul class="items-center justify-between pt-4 text-base lg:flex lg:pt-0"><li><label for="privacyModal" class="btn btn-ghost flex gap-2"><i class="fa-solid fa-shield-halved text-xl"></i> Security</label> <input type="checkbox" id="privacyModal" class="modal-toggle"> <div class="modal" role="dialog"><div class="modal-box flex flex-col gap-4 text-base-content"><h1 class="text-3xl font-bold">Data security</h1> <p><span class="text-xl font-extrabold">The content of the diagrams you create never leaves your browser.</span>
+      It's stored in the URL, and the browser's local storage only.</p> <p>Mermaid live editor is a fully client side application, that will also work as an offline <a href="https://web.dev/explore/progressive-web-apps" class="link" target="_blank">PWA.</a></p> <p>The only server we have is a self hosted version of the open source and privacy friendly
+      Plausible Analytics. We only collect data related to actions performed, like the type of
+      diagram rendered, number of times a feature was used, etc. <br> All the data we collect is
+      anonymized and
+      <a href="https://p.mermaid.live/mermaid.live" class="link" target="_blank">available publicly.</a></p> <p>Additional services like the external PNG/SVG/Kroki links and "Save to Mermaid Chart" feature
+      will share your diagram with the respective 3rd party service.</p> <label class="btn btn-circle btn-ghost btn-sm absolute right-2 top-2" for="privacyModal">X</label></div></div></li> <li><a class="btn btn-ghost" target="_blank" href="https://mermaid.js.org/intro/getting-started.html"> Documentation</a> </li><li><a class="btn btn-ghost" target="_blank" href="https://mermaid.js.org/config/Tutorials.html"> Tutorial</a> </li><li><a class="btn btn-ghost" target="_blank" href="https://github.com/mermaid-js/mermaid"> Mermaid</a> </li><li><a class="btn btn-ghost" target="_blank" href="https://github.com/mermaid-js/mermaid-cli"> CLI</a> </li><li><a class="btn btn-ghost" target="_blank" href="https://github.com/mermaid-js/mermaid-live-editor"><i class="fab fa-github fa-lg svelte-ep1962"></i> </a> </li><li><a class="btn btn-ghost" target="_blank" href="https://mermaidchart.com/"><img src="Online%20FlowChart%20&amp;%20Diagrams%20Editor%20-%20Mermaid%20Live%20Editor_files/mermaidchart-logo.svg" class="svelte-ep1962"> </a> </li></ul></div></div> <div class="flex flex-1 overflow-hidden"><div class="hidden flex-col md:flex" id="editorPane" style="width: 40%;"><div class="card m-2 flex flex-grow flex-col overflow-hidden rounded shadow-2xl"><div role="toolbar" tabindex="0" class="bg-primary p-2 pb-0 flex-none cursor-pointer"><div class="flex justify-between"><div class="flex cursor-default"><span role="menubar" tabindex="0" class="mr-2 font-semibold"> Mermaid</span> <ul class="tabs"><div role="tab" tabindex="0" class="tab tab-lifted tab-active"><i class="mr-1 fas fa-code svelte-1qkpo3v"></i> Code </div><div role="tab" tabindex="0" class="tab tab-lifted text-primary-content"><i class="mr-1 fas fa-cogs svelte-1qkpo3v"></i> Config </div></ul></div> <div class="flex items-center gap-x-4 -mt-2"><div slot="actions" class="flex flex-row items-center"><div class="form-control flex-row items-center"><label class="label cursor-pointer" for="autoSync"><span>Auto sync</span> <input type="checkbox" class="toggle btn-secondary ml-1" id="autoSync" checked="checked"></label></div>  <button class="btn btn-secondary btn-xs" title="View documentation for graph diagram"><a target="_blank" href="https://mermaid.js.org/syntax/.html" data-cy="docs"><i class="fas fa-book mr-1"></i>Docs</a></button></div></div></div></div> <div class="card-body flex-grow overflow-auto p-0 text-base-content"><div id="editor" class="overflow-hidden" data-keybinding-context="1" data-mode-id="mermaid" style="--vscode-editorCodeLens-lineHeight: 16px; --vscode-editorCodeLens-fontSize: 12px; --vscode-editorCodeLens-fontFeatureSettings: &quot;liga&quot; off, &quot;calt&quot; off;"><div class="monaco-editor no-user-select  showUnused showDeprecated vs-dark" role="code" style="width: 617px; height: 672px;" data-uri="inmemory://model/1"><div data-mprt="3" class="overflow-guard" style="width: 617px; height: 672px;"><div class="margin" style="position: absolute; transform: translate3d(0px, 0px, 0px); contain: strict; top: 0px; height: 976px; width: 66px;" role="presentation" aria-hidden="true"><div class="glyph-margin" style="left: 0px; width: 0px; height: 976px;"></div><div class="margin-view-zones" style="position: absolute;" role="presentation" aria-hidden="true"></div><div class="margin-view-overlays" style="position: absolute; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 14px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 19px; letter-spacing: 0px; width: 66px; height: 976px;" role="presentation" aria-hidden="true"><div style="position:absolute;top:0px;width:100%;height:19px;"><div class="current-line current-line-margin-both" style="width:66px; height:19px;"></div><div class="cldr codicon codicon-folding-expanded" style="left:40px;width:26px;"></div><div class="line-numbers active-line-number" style="left:0px;width:40px;">1</div></div><div style="position:absolute;top:19px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">2</div></div><div style="position:absolute;top:38px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">3</div></div><div style="position:absolute;top:57px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">4</div></div><div style="position:absolute;top:76px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">5</div></div><div style="position:absolute;top:95px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">6</div></div><div style="position:absolute;top:114px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">7</div></div><div style="position:absolute;top:133px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">8</div></div><div style="position:absolute;top:152px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">9</div></div><div style="position:absolute;top:171px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">10</div></div><div style="position:absolute;top:190px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">11</div></div><div style="position:absolute;top:209px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">12</div></div><div style="position:absolute;top:228px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">13</div></div><div style="position:absolute;top:247px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">14</div></div><div style="position:absolute;top:266px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">15</div></div><div style="position:absolute;top:285px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">16</div></div><div style="position:absolute;top:304px;width:100%;height:19px;"><div class="line-numbers" style="left:0px;width:40px;">17</div></div></div><div class="glyph-margin-widgets" style="position: absolute; top: 0px;"></div></div><div class="monaco-scrollable-element editor-scrollable vs-dark" role="presentation" style="position: absolute; overflow: hidden; left: 66px; width: 551px; height: 672px;" data-mprt="5"><div class="lines-content monaco-editor-background" style="position: absolute; overflow: hidden; width: 1000000px; height: 1000000px; transform: translate3d(0px, 0px, 0px); contain: strict; top: 0px; left: 0px;"><div class="view-overlays" style="position: absolute; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 14px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 19px; letter-spacing: 0px; height: 0px; width: 1166px;" role="presentation" aria-hidden="true"><div style="position:absolute;top:0px;width:100%;height:19px;"><div class="current-line" style="width:1166px; height:19px;"></div></div><div style="position:absolute;top:19px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:19px;width:8px"></div></div><div style="position:absolute;top:38px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:19px;width:8px"></div></div><div style="position:absolute;top:57px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:19px;width:8px"></div></div><div style="position:absolute;top:76px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:19px;width:8px"></div></div><div style="position:absolute;top:95px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:19px;width:8px"></div></div><div style="position:absolute;top:114px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:19px;width:8px"></div></div><div style="position:absolute;top:133px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:19px;width:8px"></div></div><div style="position:absolute;top:152px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:19px;width:8px"></div></div><div style="position:absolute;top:171px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:19px;width:8px"></div></div><div style="position:absolute;top:190px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:19px;width:8px"></div></div><div style="position:absolute;top:209px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:19px;width:8px"></div></div><div style="position:absolute;top:228px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:19px;width:8px"></div></div><div style="position:absolute;top:247px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:19px;width:8px"></div></div><div style="position:absolute;top:266px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:19px;width:8px"></div></div><div style="position:absolute;top:285px;width:100%;height:19px;"><div class="core-guide core-guide-indent lvl-0 indent-active vertical" style="left:0px;height:19px;width:8px"></div></div><div style="position:absolute;top:304px;width:100%;height:19px;"></div></div><div role="presentation" aria-hidden="true" class="view-rulers"></div><div class="view-zones" style="position: absolute;" role="presentation" aria-hidden="true"></div><div class="view-lines monaco-mouse-cursor-text" style="position: absolute; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 14px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 19px; letter-spacing: 0px; width: 1166px; height: 976px;" role="presentation" aria-hidden="true" data-mprt="7"><div style="top:0px;height:19px;" class="view-line"><span><span class="mtk24 mtkb">graph</span><span class="mtk1">&nbsp;</span><span class="mtk8">TB</span></span></div><div style="top:19px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk25">A</span><span class="mtk5">[Start]</span><span class="mtk1">&nbsp;</span><span class="mtk22 mtkb">--&gt;</span><span class="mtk1">&nbsp;</span><span class="mtk25">B</span><span class="mtk5">{Unzip&nbsp;or&nbsp;Clone&nbsp;the&nbsp;starter&nbsp;project&nbsp;repository}</span></span></div><div style="top:38px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk25">B</span><span class="mtk1">&nbsp;</span><span class="mtk22 mtkb">--&gt;</span><span class="mtk1">&nbsp;</span><span class="mtk25">C</span><span class="mtk5">{C&nbsp;Search&nbsp;for&nbsp;environments.yml,&nbsp;requirements.txt&nbsp;f</span><span class="mtk5">ile&nbsp;or&nbsp;PyProject.toml}</span></span></div><div style="top:57px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk25">C</span><span class="mtk1">&nbsp;</span><span class="mtk22 mtkb">--&gt;</span><span class="mtk5">|C0&nbsp;environments.yml|</span><span class="mtk1">&nbsp;</span><span class="mtk25">D</span><span class="mtk5">[C1&nbsp;Use&nbsp;environment.yml&nbsp;for&nbsp;the&nbsp;environment]</span></span></div><div style="top:76px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk25">C</span><span class="mtk1">&nbsp;</span><span class="mtk22 mtkb">--&gt;</span><span class="mtk5">|C2&nbsp;requirements.txt|</span><span class="mtk1">&nbsp;</span><span class="mtk25">E</span><span class="mtk5">[C3&nbsp;Use&nbsp;requirement.txt&nbsp;for&nbsp;the&nbsp;environment]</span></span></div><div style="top:95px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk25">C</span><span class="mtk1">&nbsp;</span><span class="mtk22 mtkb">--&gt;</span><span class="mtk5">|C4&nbsp;Poetry&nbsp;spec|</span><span class="mtk1">&nbsp;</span><span class="mtk25">F</span><span class="mtk5">[C5&nbsp;Ask&nbsp;user&nbsp;to&nbsp;use&nbsp;Poetry&nbsp;spec&nbsp;for&nbsp;environment]</span></span></div><div style="top:114px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk25">D</span><span class="mtk1">&nbsp;</span><span class="mtk22 mtkb">--&gt;</span><span class="mtk1">&nbsp;</span><span class="mtk25">G</span><span class="mtk5">[Parse&nbsp;the&nbsp;requirements&nbsp;file]</span></span></div><div style="top:133px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk25">E</span><span class="mtk1">&nbsp;</span><span class="mtk22 mtkb">--&gt;</span><span class="mtk1">&nbsp;</span><span class="mtk25">G1</span><span class="mtk5">[No&nbsp;Python&nbsp;constraint;&nbsp;use&nbsp;latest&nbsp;version.]</span></span></div><div style="top:152px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk25">G</span><span class="mtk1">&nbsp;</span><span class="mtk22 mtkb">--&gt;</span><span class="mtk1">&nbsp;</span><span class="mtk25">H</span><span class="mtk5">{Plan&nbsp;to&nbsp;use&nbsp;latest&nbsp;version&nbsp;of&nbsp;Python&nbsp;BY&nbsp;DEFAULT,&nbsp;</span><span class="mtk5">UNLESS&nbsp;the&nbsp;new&nbsp;project&nbsp;package&nbsp;requires&nbsp;an&nbsp;older&nbsp;v</span><span class="mtk5">ersion}</span></span></div><div style="top:171px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk25">H</span><span class="mtk1">&nbsp;</span><span class="mtk22 mtkb">--&gt;</span><span class="mtk1">&nbsp;</span><span class="mtk25">I</span><span class="mtk5">[Alert&nbsp;user&nbsp;latest&nbsp;version&nbsp;of&nbsp;Python&nbsp;will&nbsp;be&nbsp;used.</span><span class="mtk5">&nbsp;Ask&nbsp;whether&nbsp;to&nbsp;use&nbsp;a&nbsp;different&nbsp;version,&nbsp;if&nbsp;not&nbsp;sp</span><span class="mtk5">ecified&nbsp;in&nbsp;requirements&nbsp;file]</span></span></div><div style="top:190px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk25">I</span><span class="mtk1">&nbsp;</span><span class="mtk22 mtkb">--&gt;</span><span class="mtk1">&nbsp;</span><span class="mtk25">J</span><span class="mtk5">[Get&nbsp;channels&nbsp;used&nbsp;in&nbsp;conda&nbsp;configuration,&nbsp;if&nbsp;avai</span><span class="mtk5">lable]</span></span></div><div style="top:209px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk25">J</span><span class="mtk1">&nbsp;</span><span class="mtk22 mtkb">--&gt;</span><span class="mtk1">&nbsp;</span><span class="mtk25">K</span><span class="mtk5">[Get&nbsp;environments&nbsp;available&nbsp;locally]</span></span></div><div style="top:228px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk25">K</span><span class="mtk1">&nbsp;</span><span class="mtk22 mtkb">--&gt;</span><span class="mtk1">&nbsp;</span><span class="mtk25">L</span><span class="mtk5">[Create&nbsp;new&nbsp;environment]</span></span></div><div style="top:247px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk25">L</span><span class="mtk1">&nbsp;</span><span class="mtk22 mtkb">--&gt;</span><span class="mtk1">&nbsp;</span><span class="mtk25">M</span><span class="mtk5">[Install&nbsp;packages&nbsp;in&nbsp;environment]</span></span></div><div style="top:266px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk25">M</span><span class="mtk1">&nbsp;</span><span class="mtk22 mtkb">--&gt;</span><span class="mtk1">&nbsp;</span><span class="mtk25">N</span><span class="mtk5">[Save&nbsp;the&nbsp;versions&nbsp;of&nbsp;the&nbsp;packages&nbsp;to&nbsp;a&nbsp;file]</span></span></div><div style="top:285px;height:19px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk25">N</span><span class="mtk1">&nbsp;</span><span class="mtk22 mtkb">--&gt;</span><span class="mtk1">&nbsp;</span><span class="mtk25">O</span><span class="mtk5">[End]</span></span></div><div style="top:304px;height:19px;" class="view-line"><span><span></span></span></div></div><div data-mprt="1" class="contentWidgets" style="position: absolute; top: 0px;"></div><div role="presentation" aria-hidden="true" class="cursors-layer cursor-line-style cursor-solid"><div class="cursor monaco-mouse-cursor-text " style="height: 19px; top: 0px; left: 0px; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 14px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 19px; letter-spacing: 0px; display: block; visibility: hidden; padding-left: 0px; width: 1.6px;"></div></div></div><div role="presentation" aria-hidden="true" class="invisible scrollbar horizontal fade" style="position: absolute; width: 537px; height: 12px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 12px; transform: translate3d(0px, 0px, 0px); contain: strict; width: 253px;"></div></div><canvas class="decorationsOverviewRuler" style="position: absolute; transform: translate3d(0px, 0px, 0px); contain: strict; top: 0px; right: 0px; width: 14px; height: 672px; display: none;" aria-hidden="true" width="0" height="0"></canvas><div role="presentation" aria-hidden="true" class="invisible scrollbar vertical fade" style="position: absolute; width: 14px; height: 672px; right: 0px; top: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 14px; transform: translate3d(0px, 0px, 0px); contain: strict; height: 462px;"></div></div></div><div role="presentation" aria-hidden="true" style="width: 617px;"></div><textarea data-mprt="6" class="inputarea monaco-mouse-cursor-text" wrap="off" style="tab-size: 32px; font-family: Consolas, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 14px; font-feature-settings: &quot;liga&quot; 0, &quot;calt&quot; 0; font-variation-settings: normal; line-height: 19px; letter-spacing: 0px; top: 0px; left: 66px; width: 0px; height: 0px;" autocorrect="off" autocapitalize="none" autocomplete="off" spellcheck="false" aria-label="Editor content;Press Alt+F1 for Accessibility Options." aria-required="false" tabindex="0" role="textbox" aria-roledescription="editor" aria-multiline="true" aria-autocomplete="both">graph TB
+    A[Start] --&gt; B{Unzip or Clone the starter project repository}
+    B --&gt; C{C Search for environments.yml, requirements.txt file or PyProject.toml}
+    C --&gt;|C0 environments.yml| D[C1 Use environment.yml for the environment]
+    C --&gt;|C2 requirements.txt| E[C3 Use requirement.txt for the environment]
+    C --&gt;|C4 Poetry spec| F[C5 Ask user to use Poetry spec for environment]
+    D --&gt; G[Parse the requirements file]
+    E --&gt; G1[No Python constraint; use latest version.]
+    G --&gt; H{Pl</textarea><div style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px;" class="monaco-editor-background textAreaCover line-numbers"></div><div data-mprt="4" class="overlayWidgets" style="width: 617px;"></div><div data-mprt="8" class="minimap slider-mouseover" style="position: absolute; left: 0px; width: 0px; height: 672px;" role="presentation" aria-hidden="true"><div class="minimap-shadow-hidden" style="height: 672px;"></div><canvas style="position: absolute; left: 0px; width: 0px; height: 672px;" width="0" height="840"></canvas><canvas style="position: absolute; left: 0px; width: 0px; height: 672px;" class="minimap-decorations-layer" width="0" height="840"></canvas><div style="position: absolute; transform: translate3d(0px, 0px, 0px); contain: strict; width: 0px;" class="minimap-slider"><div style="position: absolute; width: 0px; height: 0px;" class="minimap-slider-horizontal"></div></div></div><div role="presentation" aria-hidden="true" class="blockDecorations-container"></div></div><div data-mprt="2" class="overflowingContentWidgets"></div></div></div></div></div> <div class="-mt-2"><div class="card m-2 flex flex-grow flex-col overflow-hidden rounded shadow-2xl"><div role="toolbar" tabindex="0" class="bg-primary p-2  flex-none cursor-pointer"><div class="flex justify-between"><div class="flex cursor-default"><span role="menubar" tabindex="0" class="mr-2 font-semibold"><i class="fas fa-chevron-right icon svelte-1qkpo3v"></i> Sample Diagrams</span> </div> <div class="flex items-center gap-x-4 "></div></div></div> </div> <div class="card m-2 flex flex-grow flex-col overflow-hidden rounded shadow-2xl"><div role="toolbar" tabindex="0" class="bg-primary p-2  flex-none cursor-pointer"><div class="flex justify-between"><div class="flex cursor-default"><span role="menubar" tabindex="0" class="mr-2 font-semibold"><i class="fas fa-chevron-right icon svelte-1qkpo3v"></i> History</span> </div> <div class="flex items-center gap-x-4 "><div slot="actions"><button id="uploadHistory" class="btn btn-secondary btn-xs w-12" title="Upload history"><i class="fa fa-upload"></i></button> <button id="downloadHistory" class="btn btn-secondary btn-xs w-12" title="Download history"><i class="fa fa-download"></i></button>
+    |
+    <button id="saveHistory" class="btn btn-success btn-xs w-12" title="Save current state"><i class="far fa-save"></i></button> <button id="clearHistory" class="btn btn-error btn-xs w-12" title="Delete all saved states"><i class="fas fa-trash-alt"></i></button></div></div></div></div> </div> <div class="card m-2 flex flex-grow flex-col overflow-hidden rounded shadow-2xl"><div role="toolbar" tabindex="0" class="bg-primary p-2  flex-none cursor-pointer"><div class="flex justify-between"><div class="flex cursor-default"><span role="menubar" tabindex="0" class="mr-2 font-semibold"><i class="fas fa-chevron-right icon svelte-1qkpo3v"></i> Actions</span> </div> <div class="flex items-center gap-x-4 "></div></div></div> </div></div></div> <div id="resizeHandler" class="hidden md:block svelte-1fge7im"></div> <div class="flex flex-1 flex-col overflow-hidden"><div class="card m-2 flex flex-grow flex-col overflow-hidden rounded shadow-2xl"><div role="toolbar" tabindex="0" class="bg-primary p-2  flex-none cursor-pointer"><div class="flex justify-between"><div class="flex cursor-default"><span role="menubar" tabindex="0" class="mr-2 font-semibold"> Diagram</span> <ul class="tabs"></ul></div> <div class="flex items-center gap-x-4 "><div slot="actions" class="flex flex-row items-center gap-2"><label class="label cursor-pointer py-0" for="panZoom"><span>Pan &amp; Zoom</span> <input type="checkbox" class="toggle btn-secondary" id="panZoom" checked="checked"></label> <a href="https://mermaid.live/view#pako:eNqFlF9v2jAUxb_KlZ9plARIIyZNgkD_MoZEedhCH9zEKV4dO7MNbQp89zlOYOlQtTwQcn3Oude_WNmhRKQEDdCzxMUaHkYrDuYaxguNpX6Ei4uvMNot-TstQEiImOAE9JqAqtaJhEKKXyTRIEkhFNVCloc6YmS90S6CBcEyWUNm_IRvqRQ8J1wrp8xZx_h-b6gkdUW_acgoI1WreTmvox0tctaERlXoPnLPgvYwjiMPloq0l6oV27eauFV__JDmnw2xh0kcdW1aa6ke739pPZgLomUJqiDJHq7iqA9D9QIbZWhpUd3bin-xNGFjS-86nmOpauDtGS2kRjmplV48E4aZXgsOieBKS0y5_mLbMayJ0rAlUlHBncZ4bY03uznD_DjYRyWI7Bg5-gHjydVwOX3owHI2nSwWdihOXk8noMDJC34-DarAxAqWml03cc07vLF9b-MhI1LXWD5t-0oZgydSqVLHYnxdE9P4RBJDSrOMSEPlaO8AzYALbfHSjJIUKP8U362d5i6-JhqSNeacMGXbVSYDMsXVb0afNxLrYzreYsrw0ynkzobc25D2yfwrBCYSzFjZGO6tYRpHkpitW4znZ2BqRd_iW_M2jfcIWFWTnau_WfUsXuBtfWAaHKrCWT2f7AYdbiOYWef3eMJTU0EdlBOZY5qar8KuUqyQsedkhQbmb4rlywqt-MHo8EaLRckTNNByQzpoU6RmN2OKzcckPxYLzH8K0X5Egx16QwMvcB3P67qhH4b9y57vd1Bpqm7PCX3fu-y5l74f9AP_0EHvNsBzuqEbdHt-4Ln9wAvD4PAHEEmVCQ" target="_blank" class="btn btn-secondary btn-xs gap-1" title="View diagram in new page"><i class="fas fa-external-link-alt"></i>Full screen</a> <a href="https://mermaidchart.com/app/plugin/save?state=pako:eNqFlF9v2jAUxb_KlZ9plARIIyZNgkD_MoZEedhCH9zEKV4dO7MNbQp89zlOYOlQtTwQcn3Oude_WNmhRKQEDdCzxMUaHkYrDuYaxguNpX6Ei4uvMNot-TstQEiImOAE9JqAqtaJhEKKXyTRIEkhFNVCloc6YmS90S6CBcEyWUNm_IRvqRQ8J1wrp8xZx_h-b6gkdUW_acgoI1WreTmvox0tctaERlXoPnLPgvYwjiMPloq0l6oV27eauFV__JDmnw2xh0kcdW1aa6ke739pPZgLomUJqiDJHq7iqA9D9QIbZWhpUd3bin-xNGFjS-86nmOpauDtGS2kRjmplV48E4aZXgsOieBKS0y5_mLbMayJ0rAlUlHBncZ4bY03uznD_DjYRyWI7Bg5-gHjydVwOX3owHI2nSwWdihOXk8noMDJC34-DarAxAqWml03cc07vLF9b-MhI1LXWD5t-0oZgydSqVLHYnxdE9P4RBJDSrOMSEPlaO8AzYALbfHSjJIUKP8U362d5i6-JhqSNeacMGXbVSYDMsXVb0afNxLrYzreYsrw0ynkzobc25D2yfwrBCYSzFjZGO6tYRpHkpitW4znZ2BqRd_iW_M2jfcIWFWTnau_WfUsXuBtfWAaHKrCWT2f7AYdbiOYWef3eMJTU0EdlBOZY5qar8KuUqyQsedkhQbmb4rlywqt-MHo8EaLRckTNNByQzpoU6RmN2OKzcckPxYLzH8K0X5Egx16QwMvcB3P67qhH4b9y57vd1Bpqm7PCX3fu-y5l74f9AP_0EHvNsBzuqEbdHt-4Ln9wAvD4PAHEEmVCQ" target="_blank" class="btn btn-secondary btn-xs gap-1 bg-[#FF3570]" title="Save diagram in Mermaid Chart"><img src="Online%20FlowChart%20&amp;%20Diagrams%20Editor%20-%20Mermaid%20Live%20Editor_files/mermaidchart-logo.svg" class="h-5 w-5" alt="Mermaid chart logo">Save to
+            Mermaid Chart</a></div></div></div></div> <div class="card-body flex-grow overflow-auto p-0 text-base-content"><div class="flex-1 overflow-auto"> <div id="view" class="h-full p-2 svelte-1ewr4tw"><div id="container" class="h-full overflow-auto svelte-1ewr4tw"><svg aria-roledescription="flowchart-v2" role="graphics-document document" style="overflow: hidden; max-width: 100%;" xmlns="http://www.w3.org/2000/svg" width="100%" id="graph-div" height="100%" xlink="http://www.w3.org/1999/xlink" ev="http://www.w3.org/2001/xml-events"><g id="viewport-20240228232505931" class="svg-pan-zoom_viewport" transform="matrix(0.39647483825683594,0,0,0.39647483825683594,160.1130828857422,104.82217407226562)" style="transform: matrix(0.396475, 0, 0, 0.396475, 160.113, 104.822);"><style>#graph-
+div{font-family:"trebuchet 
+ms",verdana,arial,sans-serif;font-size:16px;fill:#ccc;}#graph-div 
+.error-icon{fill:#a44141;}#graph-div 
+.error-text{fill:#ddd;stroke:#ddd;}#graph-div 
+.edge-thickness-normal{stroke-width:2px;}#graph-div 
+.edge-thickness-thick{stroke-width:3.5px;}#graph-div 
+.edge-pattern-solid{stroke-dasharray:0;}#graph-div 
+.edge-pattern-dashed{stroke-dasharray:3;}#graph-div 
+.edge-pattern-dotted{stroke-dasharray:2;}#graph-div 
+.marker{fill:lightgrey;stroke:lightgrey;}#graph-div 
+.marker.cross{stroke:lightgrey;}#graph-div svg{font-family:"trebuchet 
+ms",verdana,arial,sans-serif;font-size:16px;}#graph-div 
+.label{font-family:"trebuchet 
+ms",verdana,arial,sans-serif;color:#ccc;}#graph-div .cluster-label 
+text{fill:#F9FFFE;}#graph-div .cluster-label span,#graph-div 
+p{color:#F9FFFE;}#graph-div .label text,#graph-div span,#graph-div 
+p{fill:#ccc;color:#ccc;}#graph-div .node rect,#graph-div .node 
+circle,#graph-div .node ellipse,#graph-div .node polygon,#graph-div 
+.node path{fill:#1f2020;stroke:#81B1DB;stroke-width:1px;}#graph-div 
+.flowchart-label text{text-anchor:middle;}#graph-div .node 
+.label{text-align:center;}#graph-div 
+.node.clickable{cursor:pointer;}#graph-div 
+.arrowheadPath{fill:lightgrey;}#graph-div .edgePath 
+.path{stroke:lightgrey;stroke-width:2.0px;}#graph-div 
+.flowchart-link{stroke:lightgrey;fill:none;}#graph-div 
+.edgeLabel{background-color:hsl(0, 0%, 
+34.4117647059%);text-align:center;}#graph-div .edgeLabel 
+rect{opacity:0.5;background-color:hsl(0, 0%, 34.4117647059%);fill:hsl(0,
+ 0%, 34.4117647059%);}#graph-div .labelBkg{background-color:rgba(87.75, 
+87.75, 87.75, 0.5);}#graph-div .cluster rect{fill:hsl(180, 
+1.5873015873%, 28.3529411765%);stroke:rgba(255, 255, 255, 
+0.25);stroke-width:1px;}#graph-div .cluster 
+text{fill:#F9FFFE;}#graph-div .cluster span,#graph-div 
+p{color:#F9FFFE;}#graph-div 
+div.mermaidTooltip{position:absolute;text-align:center;max-width:
+200px;padding:2px;font-family:"trebuchet 
+ms",verdana,arial,sans-serif;font-size:12px;background:hsl(20, 
+1.5873015873%, 12.3529411765%);border:1px solid rgba(255, 255, 255, 
+0.25);border-radius:2px;pointer-events:none;z-index:100;}#graph-div 
+.flowchartTitleText{text-anchor:middle;font-size:18px;fill:#ccc;}#graph-
+div :root{--mermaid-font-family:"trebuchet 
+ms",verdana,arial,sans-serif;}</style><g><marker orient="auto" markerHeight="12" markerWidth="12" markerUnits="userSpaceOnUse" refY="5" refX="6" viewBox="0 0 10 10" class="marker flowchart" id="graph-div_flowchart-pointEnd"><path style="stroke-width: 1px; stroke-dasharray: 1px, 0px;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerHeight="12" markerWidth="12" markerUnits="userSpaceOnUse" refY="5" refX="4.5" viewBox="0 0 10 10" class="marker flowchart" id="graph-div_flowchart-pointStart"><path style="stroke-width: 1px; stroke-dasharray: 1px, 0px;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="11" viewBox="0 0 10 10" class="marker flowchart" id="graph-div_flowchart-circleEnd"><circle style="stroke-width: 1px; stroke-dasharray: 1px, 0px;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="-1" viewBox="0 0 10 10" class="marker flowchart" id="graph-div_flowchart-circleStart"><circle style="stroke-width: 1px; stroke-dasharray: 1px, 0px;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="12" viewBox="0 0 11 11" class="marker cross flowchart" id="graph-div_flowchart-crossEnd"><path style="stroke-width: 2px; stroke-dasharray: 1px, 0px;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="-1" viewBox="0 0 11 11" class="marker cross flowchart" id="graph-div_flowchart-crossStart"><path style="stroke-width: 2px; stroke-dasharray: 1px, 0px;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path marker-end="url(#graph-div_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-A LE-B" id="L-A-B-0" d="M837,39L837,43.167C837,47.333,837,55.667,837.066,63.2C837.132,70.734,837.264,77.467,837.33,80.834L837.396,84.201"></path><path marker-end="url(#graph-div_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-B LE-C" id="L-B-C-0" d="M837.5,465.5L837.417,469.583C837.333,473.667,837.167,481.833,837.149,489.284C837.132,496.734,837.264,503.467,837.33,506.834L837.396,510.201"></path><path marker-end="url(#graph-div_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-C LE-D" id="L-C-D-0" d="M682.659,927.909L644.132,959.799C605.606,991.689,528.553,1055.47,490.026,1092.643C451.5,1129.817,451.5,1140.383,451.5,1145.667L451.5,1150.95"></path><path marker-end="url(#graph-div_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-C LE-E" id="L-C-E-0" d="M837.5,1082.75L837.417,1088.833C837.333,1094.917,837.167,1107.083,837.083,1118.45C837,1129.817,837,1140.383,837,1145.667L837,1150.95"></path><path marker-end="url(#graph-div_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-C LE-F" id="L-C-F-0" d="M993.539,926.711L1032.803,958.801C1072.067,990.891,1150.596,1055.07,1189.861,1092.444C1229.125,1129.817,1229.125,1140.383,1229.125,1145.667L1229.125,1150.95"></path><path marker-end="url(#graph-div_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-D LE-G" id="L-D-G-0" d="M451.5,1195.25L451.5,1199.417C451.5,1203.583,451.5,1211.917,451.5,1219.367C451.5,1226.817,451.5,1233.383,451.5,1236.667L451.5,1239.95"></path><path marker-end="url(#graph-div_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-E LE-G1" id="L-E-G1-0" d="M837,1195.25L837,1199.417C837,1203.583,837,1211.917,837,1219.367C837,1226.817,837,1233.383,837,1236.667L837,1239.95"></path><path marker-end="url(#graph-div_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-G LE-H" id="L-G-H-0" d="M451.5,1284.25L451.5,1288.417C451.5,1292.583,451.5,1300.917,451.566,1308.45C451.632,1315.984,451.764,1322.717,451.83,1326.084L451.896,1329.451"></path><path marker-end="url(#graph-div_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-H LE-I" id="L-H-I-0" d="M452,2157.767L451.917,2161.85C451.833,2165.933,451.667,2174.1,451.583,2181.467C451.5,2188.833,451.5,2195.4,451.5,2198.683L451.5,2201.967"></path><path marker-end="url(#graph-div_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-I LE-J" id="L-I-J-0" d="M451.5,2246.267L451.5,2250.433C451.5,2254.6,451.5,2262.933,451.5,2270.383C451.5,2277.833,451.5,2284.4,451.5,2287.683L451.5,2290.967"></path><path marker-end="url(#graph-div_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-J LE-K" id="L-J-K-0" d="M451.5,2335.267L451.5,2339.433C451.5,2343.6,451.5,2351.933,451.5,2359.383C451.5,2366.833,451.5,2373.4,451.5,2376.683L451.5,2379.967"></path><path marker-end="url(#graph-div_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-K LE-L" id="L-K-L-0" d="M451.5,2424.267L451.5,2428.433C451.5,2432.6,451.5,2440.933,451.5,2448.383C451.5,2455.833,451.5,2462.4,451.5,2465.683L451.5,2468.967"></path><path marker-end="url(#graph-div_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-L LE-M" id="L-L-M-0" d="M451.5,2513.267L451.5,2517.433C451.5,2521.6,451.5,2529.933,451.5,2537.383C451.5,2544.833,451.5,2551.4,451.5,2554.683L451.5,2557.967"></path><path marker-end="url(#graph-div_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-M LE-N" id="L-M-N-0" d="M451.5,2602.267L451.5,2606.433C451.5,2610.6,451.5,2618.933,451.5,2626.383C451.5,2633.833,451.5,2640.4,451.5,2643.683L451.5,2646.967"></path><path marker-end="url(#graph-div_flowchart-pointEnd)" style="fill:none;" class="edge-thickness-normal edge-pattern-solid flowchart-link LS-N LE-O" id="L-N-O-0" d="M451.5,2691.267L451.5,2695.433C451.5,2699.6,451.5,2707.933,451.5,2715.383C451.5,2722.833,451.5,2729.4,451.5,2732.683L451.5,2735.967"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g transform="translate(451.5, 1119.25)" class="edgeLabel"><g transform="translate(-75, -12)" class="label"><foreignObject height="24" width="150"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">C0 environments.yml</span></div></foreignObject></g></g><g transform="translate(837, 1119.25)" class="edgeLabel"><g transform="translate(-71.5, -12)" class="label"><foreignObject height="24" width="143"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">C2 requirements.txt</span></div></foreignObject></g></g><g transform="translate(1229.125, 1119.25)" class="edgeLabel"><g transform="translate(-53.125, -12)" class="label"><foreignObject height="24" width="106.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">C4 Poetry spec</span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g transform="translate(837, 19.5)" data-id="A" data-node="true" id="flowchart-A-30" class="node default default flowchart-label"><rect height="39" width="49" y="-19.5" x="-24.5" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-17, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="34"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">Start</span></div></foreignObject></g></g><g transform="translate(837, 277)" data-id="B" data-node="true" id="flowchart-B-31" class="node default default flowchart-label"><polygon style="" transform="translate(-188,188)" class="label-container" points="188,0 376,-188 188,-376 0,-188"></polygon><g transform="translate(-161, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="322"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">Unzip or Clone the starter project repository</span></div></foreignObject></g></g><g transform="translate(837, 798.625)" data-id="C" data-node="true" id="flowchart-C-33" class="node default default flowchart-label"><polygon style="" transform="translate(-283.625,283.625)" class="label-container" points="283.625,0 567.25,-283.625 283.625,-567.25 0,-283.625"></polygon><g transform="translate(-256.625, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="513.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">C Search for environments.yml, requirements.txt file or PyProject.toml</span></div></foreignObject></g></g><g transform="translate(451.5, 1175.75)" data-id="D" data-node="true" id="flowchart-D-35" class="node default default flowchart-label"><rect height="39" width="339" y="-19.5" x="-169.5" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-162, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="324"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">C1 Use environment.yml for the environment</span></div></foreignObject></g></g><g transform="translate(837, 1175.75)" data-id="E" data-node="true" id="flowchart-E-37" class="node default default flowchart-label"><rect height="39" width="332" y="-19.5" x="-166" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-158.5, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="317"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">C3 Use requirement.txt for the environment</span></div></foreignObject></g></g><g transform="translate(1229.125, 1175.75)" data-id="F" data-node="true" id="flowchart-F-39" class="node default default flowchart-label"><rect height="39" width="352.25" y="-19.5" x="-176.125" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-168.625, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="337.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">C5 Ask user to use Poetry spec for environment</span></div></foreignObject></g></g><g transform="translate(451.5, 1264.75)" data-id="G" data-node="true" id="flowchart-G-41" class="node default default flowchart-label"><rect height="39" width="209.25" y="-19.5" x="-104.625" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-97.125, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="194.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">Parse the requirements file</span></div></foreignObject></g></g><g transform="translate(837, 1264.75)" data-id="G1" data-node="true" id="flowchart-G1-43" class="node default default flowchart-label"><rect height="39" width="304" y="-19.5" x="-152" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-144.5, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="289"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">No Python constraint; use latest version.</span></div></foreignObject></g></g><g transform="translate(451.5, 1745.7583312988281)" data-id="H" data-node="true" id="flowchart-H-45" class="node default default flowchart-label"><polygon style="" transform="translate(-411.5083312988281,411.5083312988281)" class="label-container" points="411.5083312988281,0 823.0166625976562,-411.5083312988281 411.5083312988281,-823.0166625976562 0,-411.5083312988281"></polygon><g transform="translate(-384.5083312988281, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="769.0166625976562"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">Plan to use latest version of Python BY DEFAULT, UNLESS the new project package requires an older version</span></div></foreignObject></g></g><g transform="translate(451.5, 2226.7666625976562)" data-id="I" data-node="true" id="flowchart-I-47" class="node default default flowchart-label"><rect height="39" width="903" y="-19.5" x="-451.5" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-444, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="888"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">Alert user latest version of Python will be used. Ask whether to use a different version, if not specified in requirements file</span></div></foreignObject></g></g><g transform="translate(451.5, 2315.7666625976562)" data-id="J" data-node="true" id="flowchart-J-49" class="node default default flowchart-label"><rect height="39" width="398" y="-19.5" x="-199" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-191.5, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="383"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">Get channels used in conda configuration, if available</span></div></foreignObject></g></g><g transform="translate(451.5, 2404.7666625976562)" data-id="K" data-node="true" id="flowchart-K-51" class="node default default flowchart-label"><rect height="39" width="261" y="-19.5" x="-130.5" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-123, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="246"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">Get environments available locally</span></div></foreignObject></g></g><g transform="translate(451.5, 2493.7666625976562)" data-id="L" data-node="true" id="flowchart-L-53" class="node default default flowchart-label"><rect height="39" width="193" y="-19.5" x="-96.5" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-89, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="178"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">Create new environment</span></div></foreignObject></g></g><g transform="translate(451.5, 2582.7666625976562)" data-id="M" data-node="true" id="flowchart-M-55" class="node default default flowchart-label"><rect height="39" width="237" y="-19.5" x="-118.5" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-111, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="222"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">Install packages in environment</span></div></foreignObject></g></g><g transform="translate(451.5, 2671.7666625976562)" data-id="N" data-node="true" id="flowchart-N-57" class="node default default flowchart-label"><rect height="39" width="321" y="-19.5" x="-160.5" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-153, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="306"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">Save the versions of the packages to a file</span></div></foreignObject></g></g><g transform="translate(451.5, 2760.7666625976562)" data-id="O" data-node="true" id="flowchart-O-59" class="node default default flowchart-label"><rect height="39" width="41" y="-19.5" x="-20.5" ry="0" rx="0" style="" class="basic label-container"></rect><g transform="translate(-13, -12)" style="" class="label"><rect></rect><foreignObject height="24" width="26"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">End</span></div></foreignObject></g></g></g></g></g></g><defs><style id="svg-pan-zoom-controls-styles" type="text/css">.svg-
+pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.333; } 
+.svg-pan-zoom-control:hover { fill-opacity: 0.8; } 
+.svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } 
+.svg-pan-zoom-control-background { fill-opacity: 0.8; }</style></defs><g id="svg-pan-zoom-controls" transform="translate(844 727) scale(0.75)" class="svg-pan-zoom-control"><g id="svg-pan-zoom-zoom-in" transform="translate(30.5 5) scale(0.015)" class="svg-pan-zoom-control"><rect x="0" y="0" width="1500" height="1400" class="svg-pan-zoom-control-background"></rect><path d="M1280 576v128q0 26 -19 45t-45 19h-320v320q0 26 -19 45t-45 19h-128q-26 0 -45 -19t-19 -45v-320h-320q-26 0 -45 -19t-19 -45v-128q0 -26 19 -45t45 -19h320v-320q0 -26 19 -45t45 -19h128q26 0 45 19t19 45v320h320q26 0 45 19t19 45zM1536 1120v-960 q0 -119 -84.5 -203.5t-203.5 -84.5h-960q-119 0 -203.5 84.5t-84.5 203.5v960q0 119 84.5 203.5t203.5 84.5h960q119 0 203.5 -84.5t84.5 -203.5z" class="svg-pan-zoom-control-element"></path></g><g id="svg-pan-zoom-reset-pan-zoom" transform="translate(5 35) scale(0.4)" class="svg-pan-zoom-control"><rect x="2" y="2" width="182" height="58" class="svg-pan-zoom-control-background"></rect><path d="M33.051,20.632c-0.742-0.406-1.854-0.609-3.338-0.609h-7.969v9.281h7.769c1.543,0,2.701-0.188,3.473-0.562c1.365-0.656,2.048-1.953,2.048-3.891C35.032,22.757,34.372,21.351,33.051,20.632z" class="svg-pan-zoom-control-element"></path><path d="M170.231,0.5H15.847C7.102,0.5,0.5,5.708,0.5,11.84v38.861C0.5,56.833,7.102,61.5,15.847,61.5h154.384c8.745,0,15.269-4.667,15.269-10.798V11.84C185.5,5.708,178.976,0.5,170.231,0.5z M42.837,48.569h-7.969c-0.219-0.766-0.375-1.383-0.469-1.852c-0.188-0.969-0.289-1.961-0.305-2.977l-0.047-3.211c-0.03-2.203-0.41-3.672-1.142-4.406c-0.732-0.734-2.103-1.102-4.113-1.102h-7.05v13.547h-7.055V14.022h16.524c2.361,0.047,4.178,0.344,5.45,0.891c1.272,0.547,2.351,1.352,3.234,2.414c0.731,0.875,1.31,1.844,1.737,2.906s0.64,2.273,0.64,3.633c0,1.641-0.414,3.254-1.242,4.84s-2.195,2.707-4.102,3.363c1.594,0.641,2.723,1.551,3.387,2.73s0.996,2.98,0.996,5.402v2.32c0,1.578,0.063,2.648,0.19,3.211c0.19,0.891,0.635,1.547,1.333,1.969V48.569z M75.579,48.569h-26.18V14.022h25.336v6.117H56.454v7.336h16.781v6H56.454v8.883h19.125V48.569z M104.497,46.331c-2.44,2.086-5.887,3.129-10.34,3.129c-4.548,0-8.125-1.027-10.731-3.082s-3.909-4.879-3.909-8.473h6.891c0.224,1.578,0.662,2.758,1.316,3.539c1.196,1.422,3.246,2.133,6.15,2.133c1.739,0,3.151-0.188,4.236-0.562c2.058-0.719,3.087-2.055,3.087-4.008c0-1.141-0.504-2.023-1.512-2.648c-1.008-0.609-2.607-1.148-4.796-1.617l-3.74-0.82c-3.676-0.812-6.201-1.695-7.576-2.648c-2.328-1.594-3.492-4.086-3.492-7.477c0-3.094,1.139-5.664,3.417-7.711s5.623-3.07,10.036-3.07c3.685,0,6.829,0.965,9.431,2.895c2.602,1.93,3.966,4.73,4.093,8.402h-6.938c-0.128-2.078-1.057-3.555-2.787-4.43c-1.154-0.578-2.587-0.867-4.301-0.867c-1.907,0-3.428,0.375-4.565,1.125c-1.138,0.75-1.706,1.797-1.706,3.141c0,1.234,0.561,2.156,1.682,2.766c0.721,0.406,2.25,0.883,4.589,1.43l6.063,1.43c2.657,0.625,4.648,1.461,5.975,2.508c2.059,1.625,3.089,3.977,3.089,7.055C108.157,41.624,106.937,44.245,104.497,46.331z M139.61,48.569h-26.18V14.022h25.336v6.117h-18.281v7.336h16.781v6h-16.781v8.883h19.125V48.569z M170.337,20.14h-10.336v28.43h-7.266V20.14h-10.383v-6.117h27.984V20.14z" class="svg-pan-zoom-control-element"></path></g><g id="svg-pan-zoom-zoom-out" transform="translate(30.5 70) scale(0.015)" class="svg-pan-zoom-control"><rect x="0" y="0" width="1500" height="1400" class="svg-pan-zoom-control-background"></rect><path d="M1280 576v128q0 26 -19 45t-45 19h-896q-26 0 -45 -19t-19 -45v-128q0 -26 19 -45t45 -19h896q26 0 45 19t19 45zM1536 1120v-960q0 -119 -84.5 -203.5t-203.5 -84.5h-960q-119 0 -203.5 84.5t-84.5 203.5v960q0 119 84.5 203.5t203.5 84.5h960q119 0 203.5 -84.5 t84.5 -203.5z" class="svg-pan-zoom-control-element"></path></g></g></svg></div></div></div></div></div> <div class="mx-2 rounded p-2 shadow md:hidden">Code editing not supported on mobile. Please use a desktop browser.</div></div></div></div></main>  <div id="svelte-announcer" aria-live="assertive" aria-atomic="true" style="position: absolute; left: 0px; top: 0px; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); overflow: hidden; white-space: nowrap; width: 1px; height: 1px;"></div></div>
+  
+
+<div class="context-view" style="display: none;" aria-hidden="true"></div><div class="monaco-aria-container"><div class="monaco-alert" role="alert" aria-atomic="true"></div><div class="monaco-alert" role="alert" aria-atomic="true"></div><div class="monaco-status" aria-live="polite" aria-atomic="true"></div><div class="monaco-status" aria-live="polite" aria-atomic="true"></div></div><div class="mermaidTooltip" style="opacity: 0;"></div></body></html>

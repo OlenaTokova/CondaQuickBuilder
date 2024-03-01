@@ -8,6 +8,9 @@
         },
         {
             "path": "../../Bypass_Cloud_Flare"
+        },
+        {
+            "path": ".."
         }
     ]
 }

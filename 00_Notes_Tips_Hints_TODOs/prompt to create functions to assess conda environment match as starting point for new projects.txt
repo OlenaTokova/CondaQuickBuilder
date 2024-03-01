@@ -1,0 +1,8 @@
+
+<PROMPTS>
+I want to save the result as a parseable file, so that I can do the second part of the problem, 
+
+I want to determine programmatically if an existing local conda environment is a good fit to clone as a starting point for a new project. 
+
+Give me step-by-step instructions and detailed code for a fast way to do this.
+
