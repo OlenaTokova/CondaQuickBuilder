@@ -20,27 +20,36 @@ log_filename = datetime.datetime.now().strftime("%Y%m%d%H%M%S") + "_CondaQuickBu
 logging.basicConfig(filename=log_filename, level=logging.DEBUG)
 print(f"\nLog file '{log_filename}' has been created in: {os.getcwd()}\n")  # FOR DEBUGGING
 
-def get_latest_python_version():
+def get_python_cycle_EOL_revision():
     """
-    Get the latest version of Python available.
+    get_python_cycle_EOL_revision
+    Get the latest EOL revision within a Python subversion cycle.
+
+    For example: cycle":"3.3","releaseDate":"2012-09-29","support":false,"eol":"2017-09-29","latest":"3.3.7"
 
     Returns:
     str: The latest version of Python
     """
+    latest_python_version = ""
     try:
-        result = requests.get("https://endoflife.date/api/python.json")
-        parsed_result = result.json()
-        logging.info(f"parsed_result {parsed_result}")
+        response = requests.get("https://endoflife.date/api/python.json")
+        response.status_code
+        parsed_response = response.json()
+        #parsed_response_text = response.text       # if a string is needed, use response.text
+        logging.info(f"parsed_response {parsed_response}")
 
-        latest_python_version = str(parsed_result[0]["latest"])
+        latest_python_version = str(parsed_response[0]["latest"])
         logging.info(f"latest_python_version {latest_python_version}")
+        print(f"latest_python_version = {latest_python_version}")  # FOR DEBUGGING
         return latest_python_version
     except Exception as e:
+        print(f"Error occurred while getting the latest Python version: {e}")
         logging.error(f"Error occurred while getting the latest Python version: {e}")
+
 
 # Define the minimum and maximum acceptable Python versions
 MIN_PYTHON_VERSION = 3.6
-MAX_PYTHON_VERSION = parse(latest_python_version)
+MAX_PYTHON_VERSION = parse(get_python_cycle_EOL_revision())
 
 def unzip_starter_project_repo():
     """
@@ -170,6 +179,7 @@ def save_versions(package):
                 f.write(f'Environment: {env}\n')
                 f.write(get_package_versions(env, package))
                 f.write('\n')
+        print(f"Versions of package {package} saved to conda_versions_all_envs.txt")    # FOR DEBUGGING
     except Exception as e:
         logging.error(f"Error occurred while saving versions using save_versions(package): {e}")
 
@@ -301,19 +311,35 @@ if __name__ == "__main__":
             # TODO: ask the user if they want to use the latest Python version or if not, which earlier version they want to use.
             python_version = input("Enter Python version for environment (e.g., 3.7.4): ")
             
-            # Check if the entered version matches the pattern for Python versions
-            # TODO: add a function to check if the version is within the acceptable range
-            if re.match(r'^\d+\.\d+(\.\d+)?$', python_version):
-                parsed_version = parse(python_version)
-                # Check if the version is within the acceptable range
-                if MIN_PYTHON_VERSION <= parsed_version <= MAX_PYTHON_VERSION:
-                    print(f"You have entered Valid Python version: {python_version}\n")
-                    break  # Version is valid; exit the loop
+            def validate_python_version(python_version):
+                # Check if the entered version matches a valid revision for a Python subversion within a specific release cycle 
+                if re.match(r'^\d+\.\d+(\.\d+)?$', python_version):
+                    parsed_version = parse(python_version)
+                    # Check if the version is within the acceptable range
+                    if MIN_PYTHON_VERSION <= parsed_version <= MAX_PYTHON_VERSION:
+                        print(f"You have entered Valid Python version: {python_version}\n")
+                        return True  # Version is valid
+                    else:
+                        print(f"Python version {python_version} is out of the acceptable range ({MIN_PYTHON_VERSION} - {MAX_PYTHON_VERSION}).")
                 else:
-                    print(f"Python version {python_version} is out of the acceptable range ({MIN_PYTHON_VERSION} - {MAX_PYTHON_VERSION}).")
-            else:
-                print("Invalid format. Please enter a valid Python version (e.g., '3.7.4').")
+                    print("Invalid format. Please enter a valid Python version (e.g., '3.7.4').")
+                return False
+            
+            validate_python_version(python_version)
+            
+            # # Check if the entered version matches a valid revision for a Python subversion within a specific release cycle 
+            # if re.match(r'^\d+\.\d+(\.\d+)?$', python_version):
+            #     parsed_version = parse(python_version)
+            #     # Check if the version is within the acceptable range
+            #     if MIN_PYTHON_VERSION <= parsed_version <= MAX_PYTHON_VERSION:
+            #         print(f"You have entered Valid Python version: {python_version}\n")
+            #         break  # Version is valid; exit the loop
+            #     else:
+            #         print(f"Python version {python_version} is out of the acceptable range ({MIN_PYTHON_VERSION} - {MAX_PYTHON_VERSION}).")
+            # else:
+            #     print("Invalid format. Please enter a valid Python version (e.g., '3.7.4').")
 
+           
             # parse requirements
             parse_requirements(project_folder_name)
             
@@ -337,6 +363,7 @@ if __name__ == "__main__":
                     package_sign = requirement[1]
                     package_version = requirement[2]
                     search_package(package, package_sign, package_version, channels_list)
+                    print(f"Package '{package} {package_version}' installed in environment '{env_name}'")   # FOR DEBUGGING
     except Exception as e:
         logging.error(f"Error occurred in main: {e}")
 

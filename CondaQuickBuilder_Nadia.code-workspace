@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../../../.conda/envs"
+		},
+		{
+			"path": "Streamlit_Contacts_Manager-main"
 		}
 	],
 	"settings": {}
